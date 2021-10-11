@@ -1,7 +1,3 @@
-<script context="module" lang="ts">
-	export const prerender = true;
-</script>
-
 <form action="" name="contact" data-netlify="true">
 	<input
 		type="email"
