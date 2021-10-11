@@ -1,7 +1,7 @@
 <script>
 	import Analytics from '$lib/svg/Analytics.svelte';
 	import Ethereum from '$lib/svg/Ethereum.svelte';
-	import Run from '$lib/svg/run.svelte';
+	import Run from '$lib/svg/Run.svelte';
 	import Tokens from '$lib/svg/Tokens.svelte';
 </script>
 
