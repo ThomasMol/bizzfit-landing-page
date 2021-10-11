@@ -1,0 +1,13 @@
+<script>
+	import Header from '$lib/components/Header.svelte';
+	import Hero from '$lib/components/Hero.svelte';
+	import Features from '$lib/components/Features.svelte';
+	import Contact from '$lib/components/Contact.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+</script>
+
+<Header />
+<Hero />
+<Features />
+<Contact/>
+<Footer />
