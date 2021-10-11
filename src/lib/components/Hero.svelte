@@ -1,3 +1,7 @@
+<script>
+	import EmailContactForm from './EmailContactForm.svelte';
+</script>
+
 <section id="hero" class="">
 	<div class="container mx-auto">
 		<div class="space-y-4 text-center py-20">
@@ -5,17 +9,7 @@
 			<p class="text-gray-600 text-xl ">
 				De app om de werkvloer gezonder te maken en verzuim tegen te gaan!
 			</p>
-			<form action="" name="contact" data-netlify="true">
-				<input
-					type="email"
-					name="email"
-					required
-					placeholder="email adres"
-					class="h-11 rounded border-gray-300 focus:ring-yellow-600 focus:border-yellow-500" />
-				<button type="submit" class="py-2 px-3 font-bold rounded text-lg bg-yellow-500 text-white hover:bg-yellow-600">
-					Neem contact op
-				</button>
-			</form>
+			<EmailContactForm />
 		</div>
 		<div class="">
 			<img
