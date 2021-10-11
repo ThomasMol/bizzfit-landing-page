@@ -5,7 +5,7 @@
 			<p class="text-gray-600 text-xl ">
 				De app om de werkvloer gezonder te maken en verzuim tegen te gaan!
 			</p>
-			<form action="">
+			<form action="" name="contact" data-netlify="true">
 				<input
 					type="email"
 					name="email"

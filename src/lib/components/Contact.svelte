@@ -2,7 +2,7 @@
 	<div class="container mx-auto space-y-4 text-center py-20">
 		<h1 class="text-4xl font-bold text-gray-800">Interesse in een demo?</h1>
 		<p class="text-gray-600 text-xl ">Of wil je gewoon meer weten? Neem contact met ons op!</p>
-		<form action="">
+		<form action="" name="contact" data-netlify="true">
 			<input
 				type="email"
 				name="email"
