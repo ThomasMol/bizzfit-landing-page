@@ -1,4 +1,4 @@
-<form name="contact" method="POST" data-netlify="true">
+<form name="contact" method="POST" data-netlify="true" action="/success" class="space-y-2">
   <input type="hidden" name="form-name" value="contact">
 	<input
 		type="email"

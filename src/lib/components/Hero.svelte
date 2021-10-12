@@ -3,7 +3,7 @@
 </script>
 
 <section id="hero" class="">
-	<div class="container mx-auto">
+	<div class="container mx-auto px-2 md:px-0">
 		<div class="space-y-4 text-center py-20">
 			<h1 class="text-4xl font-bold text-gray-800">Begin met BizzFit</h1>
 			<p class="text-gray-600 text-xl ">
@@ -17,7 +17,7 @@
 				alt="BizzFit feed page screenshot"
 				height="auto"
 				width="auto"
-				class="h-[400px] mx-auto" />
+				class="h-auto w-[600px] mx-auto" />
 		</div>
 	</div>
 </section>
