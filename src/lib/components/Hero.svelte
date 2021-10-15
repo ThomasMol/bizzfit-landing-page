@@ -7,7 +7,7 @@
 		<div class="space-y-4 text-center py-20">
 			<h1 class="text-4xl font-bold text-gray-800">Begin met BizzFit</h1>
 			<p class="text-gray-600 text-xl ">
-				De app om de werkvloer gezonder te maken en verzuim tegen te gaan!
+				Het platform om gezondheid te verbeteren en verzuim tegen te gaan!
 			</p>
 			<EmailContactForm />
 		</div>

@@ -2,7 +2,7 @@
 	height="100%"
 	version="1.1"
 	viewBox="0 0 156 256"
-	width="100%"
+	width="auto"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	><title /><desc /><defs /><g

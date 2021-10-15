@@ -3,7 +3,7 @@
 	enable-background="new 0 0 24 24"
 	height="100%"
 	viewBox="0 0 24 24"
-	width="100%"
+	width="auto"
 	fill="currentColor"
 	><rect fill="none" height="24" width="24" /><g
 		><path
