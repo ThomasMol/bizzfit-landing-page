@@ -37,7 +37,7 @@
 		<h1 class="font-light text-2xl text-gray-700 py-6">BizzFit</h1>
 		<p class="text-lg mb-2">Vul hier de gegevens in van je activiteit!</p>
 		<div class="border rounded-lg p-4 bg-gray-50">
-			<form action="/dankjewel" class="space-y-5" data-netlify="true" name="activity-form">
+			<form method="POST" action="/dankjewel" class="space-y-5" data-netlify="true" name="activity-form">
         <input type="hidden" name="form-name" value="activity-form">
 				<div class="col-span-6 sm:col-span-3">
 					<label for="name" class="block text-sm font-medium text-gray-700">Je naam *</label>
