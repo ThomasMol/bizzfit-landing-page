@@ -1,24 +1,10 @@
 <script context="module" lang="ts">
-	/* export async function load({ page, fetch, session, context }) {
-		return {
-			props: {
-				name: page.query.get('name'),
-				emailAddress: page.query.get('email')
-			}
-		};
-	} */
 	export const prerender = true;
-
 </script>
 
 <script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
 	import { onMount } from 'svelte';
-
-	let name = '';
-	let emailAddress = '';
-
-
 
 	let userAgent;
 	let submissionDate;
@@ -37,16 +23,20 @@
 		<h1 class="font-light text-2xl text-gray-700 py-6">BizzFit</h1>
 		<p class="text-lg mb-2">Vul hier de gegevens in van je activiteit!</p>
 		<div class="border rounded-lg p-4 bg-gray-50">
-			<form method="POST" action="/dankjewel" class="space-y-5" data-netlify="true" name="activity-form">
-        <input type="hidden" name="form-name" value="activity-form">
+			<form
+				name="activities"
+				method="POST"
+				data-netlify="true"
+				action="/dankjewel"
+				class="space-y-5">
+				<input type="hidden" name="form-name" value="activities" />
 				<div class="col-span-6 sm:col-span-3">
 					<label for="name" class="block text-sm font-medium text-gray-700">Je naam *</label>
 					<input
 						type="text"
 						name="name"
 						id="name"
-						autocomplete="given-name"						
-						bind:value={name}
+						autocomplete="given-name"
 						required
 						class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 				</div>
@@ -59,7 +49,6 @@
 						name="email-address"
 						id="email-address"
 						autocomplete="email"
-						bind:value={emailAddress}
 						required
 						class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 				</div>

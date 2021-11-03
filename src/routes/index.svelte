@@ -1,6 +1,7 @@
 <script context="module" lang="ts">
 	export const prerender = true;
 </script>
+
 <script lang="ts">
 	import Header from '$lib/components/Header.svelte';
 	import Hero from '$lib/components/Hero.svelte';
