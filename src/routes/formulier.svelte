@@ -5,7 +5,8 @@
 <script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
 	import { onMount } from 'svelte';
-	import { fly } from 'svelte/transition';
+	import { fade, fly, scale } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 
 	// This variable is a boolean, however, its changed using radio inputs with 1 or a 0
 	// Hopefully 1 and 0 are parsed as booleans to true and false
@@ -72,7 +73,7 @@
 		<h1 class="font-bold italic text-4xl text-yellow-500 py-6 text-center">BizzFit</h1>
 		<p class="text-lg mb-2">Vul hier de gegevens in van je activiteit!</p>
 		<div class="border rounded-lg p-4 bg-gray-50">
-			<form name="activities" method="POST" data-netlify="true" action="/success" class="space-y-5">
+			<form name="activities" method="POST" data-netlify="true" action="/dankjewel" class="space-y-5">
 				<input type="hidden" name="form-name" value="activities" />
 				<div class="col-span-6 sm:col-span-3">
 					<label for="name" class="block text-sm font-medium text-gray-700">Je naam *</label>
@@ -85,7 +86,7 @@
 						class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 				</div>
 
-				<div class="col-span-6 sm:col-span-4">
+				<div class="">
 					<label for="email-address" class="block text-sm font-medium text-gray-700"
 						>Je emailadres *</label>
 					<input
@@ -97,7 +98,7 @@
 						class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 				</div>
 
-				<div class="col-span-6 sm:col-span-3">
+				<div class="">
 					<label for="type-activity" class="block text-sm font-medium text-gray-700"
 						>Activiteit soort</label>
 					<select
@@ -112,7 +113,7 @@
 					</select>
 				</div>
 
-				<div class="col-span-6 sm:col-span-3">
+				<div class="">
 					<label for="time" class="block text-sm font-medium text-gray-700"
 						>Hoe lang duurde je activiteit? (in minuten) *</label>
 					<input
@@ -159,7 +160,7 @@
 				</fieldset>
 
 				{#if !knowsCalorieCount}
-					<div class="col-span-6 sm:col-span-3" transition:fly="{{ y: -20, duration: 400 }}">
+					<div class="" transition:fly="{{ y: -25, duration: 400 }}">
 						<label for="calories" class="block text-sm font-medium text-gray-700"
 							>Hoeveel kilogram weeg je? (We slaan deze data niet op!)</label>
 						<input
@@ -170,7 +171,7 @@
 							bind:value={weight}
 							class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 					</div>
-					<div class="col-span-6 sm:col-span-3">
+					<div class="" transition:fly="{{ y: -25, duration: 400 }}">
 						<label for="calories" class="block text-sm font-medium text-gray-700"
 							>Zoveel calorie&euml;n heb je verbrand:</label>
 						<input
@@ -181,7 +182,7 @@
 							bind:value={calorie}
 							required
 							readonly
-							class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+							class="mt-1 block sm:text-lg font-semibold border-gray-50 bg-gray-50 rounded-md focus:ring-yellow-500 focus:border-yellow-500" />
 					</div>
 				{:else}
 					<div class="col-span-6 sm:col-span-3">
@@ -219,6 +220,7 @@
 								id="file-upload"
 								name="activity-photo"
 								type="file"
+								accept="image/jpeg,image/gif,image/png,image/webp,image/svg+xml"
 								class="focus-within:outline-none"
 								required />
 						</label>
