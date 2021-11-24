@@ -72,9 +72,8 @@
 		<h1 class="font-bold italic text-4xl text-yellow-500 py-6 text-center">BizzFit</h1>
 		<p class="text-lg mb-2">Vul hier de gegevens in van je activiteit!</p>
 		<div class="border rounded-lg p-4 bg-gray-50">
-			<form name="activities" method="GET" data-netlify="true" action="" class="space-y-5">
+			<form name="activities" method="POST" data-netlify="true" action="/success" class="space-y-5">
 				<input type="hidden" name="form-name" value="activities" />
-
 				<div class="col-span-6 sm:col-span-3">
 					<label for="name" class="block text-sm font-medium text-gray-700">Je naam *</label>
 					<input
