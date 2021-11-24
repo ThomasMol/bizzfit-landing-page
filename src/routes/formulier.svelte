@@ -6,7 +6,15 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import { onMount } from 'svelte';
 
-	let met: number = 7.5;
+	// This variable is a boolean, however, its changed using radio inputs with 1 or a 0
+	// Hopefully 1 and 0 are parsed as booleans to true and false
+	let knowsCalorieCount = 1;
+
+	let activityType = {
+		name: 'Badminton',
+		met: 6
+	};
+
 	let weight: number;
 	let time: number;
 
@@ -22,7 +30,7 @@
 		return (time * met * weight * 3.5) / 200;
 	};
 
-	$: calorie = calculateCalories(time, met, weight);
+	$: calorie = calculateCalories(time, activityType.met, weight);
 
 	const activityTypes = [
 		{
@@ -183,14 +191,15 @@
 				<div class="col-span-6 sm:col-span-3">
 					<label for="type-activity" class="block text-sm font-medium text-gray-700"
 						>Activiteit soort</label>
+					<!-- TODO now only submits the met score, not name of activity in form submission -->
 					<select
 						id="type-activity"
 						name="type-activity"
 						autocomplete="type-activity"
-						bind:value={met}
+						bind:value={activityType}
 						class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm">
 						{#each activityTypes as activityType}
-							<option value={activityType.met}>{activityType.name}</option>
+							<option value={activityType}>{activityType.name}</option>
 						{/each}
 					</select>
 				</div>
@@ -208,33 +217,78 @@
 						class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 				</div>
 
-				<div class="col-span-6 sm:col-span-3">
-					<label for="calories" class="block text-sm font-medium text-gray-700"
-						>Hoeveel kilogram weeg je? (We slaan deze data niet op!)</label>
-					<input
-						type="number"
-						name="calories"
-						id="calories"
-						min="0"
-						bind:value={weight}
-						required
-						class="mt-1  focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
-				</div>
+				<fieldset>
+					<div>
+						<legend class="text-sm font-medium text-gray-700"
+							>Weet je hoeveel calorie&euml;n je hebt verbrand?</legend>
+					</div>
+					<div class="mt-4 space-y-4">
+						<div class="flex items-center">
+							<input
+								id="manual-calorie-yes"
+								name="manual-calorie"
+								type="radio"
+								bind:group={knowsCalorieCount}
+								value={1}
+								class="focus:ring-yellow-500 h-4 w-4 text-yellow-600 border-gray-300" />
+							<label for="manual-calorie-yes" class="ml-3 block text-sm font-medium text-gray-700">
+								Ja
+							</label>
+						</div>
+						<div class="flex items-center">
+							<input
+								id="manual-calorie-no"
+								name="manual-calorie"
+								type="radio"
+								bind:group={knowsCalorieCount}
+								value={0}
+								class="focus:ring-yellow-500 h-4 w-4 text-yellow-600 border-gray-300" />
+							<label for="manual-calorie-no" class="ml-3 block text-sm font-medium text-gray-700">
+								Nee, help mij
+							</label>
+						</div>
+					</div>
+				</fieldset>
 
-				<div class="col-span-6 sm:col-span-3">
-					<label for="calories" class="block text-sm font-medium text-gray-700"
-						>Hoeveel calorie&euml;n heb je verbrand? *</label>
-					<input
-						type="number"
-						name="calories"
-						id="calories"
-						min="0"
-						bind:value={calorie}
-						required
-						disabled
-						class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
-				</div>
-
+				{#if !knowsCalorieCount}
+					<div class="col-span-6 sm:col-span-3">
+						<label for="calories" class="block text-sm font-medium text-gray-700"
+							>Hoeveel kilogram weeg je? (We slaan deze data niet op!)</label>
+						<input
+							type="number"
+							name="calories"
+							id="calories"
+							min="0"
+							bind:value={weight}
+							class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+					</div>
+					<div class="col-span-6 sm:col-span-3">
+						<label for="calories" class="block text-sm font-medium text-gray-700"
+							>Zoveel calorie&euml;n heb je verbrand:</label>
+						<input
+							type="number"
+							name="calories"
+							id="calories"
+							min="0"
+							bind:value={calorie}
+							required
+							readonly
+							class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+					</div>
+				{:else}
+					<div class="col-span-6 sm:col-span-3">
+						<label for="calories" class="block text-sm font-medium text-gray-700"
+							>Hoeveel calorie&euml;n heb je verbrand? *</label>
+						<input
+							type="number"
+							name="calories"
+							id="calories"
+							min="0"
+							bind:value={calorie}
+							required
+							class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+					</div>
+				{/if}
 				<div class="col-span-6 sm:col-span-3">
 					<label for="date" class="block text-sm font-medium text-gray-700"
 						>Wanneer was deze activiteit? *</label>
@@ -274,6 +328,7 @@
 								id="share-yes"
 								name="share-photo"
 								type="radio"
+								value="true"
 								checked
 								class="focus:ring-yellow-500 h-4 w-4 text-yellow-600 border-gray-300" />
 							<label for="share-yes" class="ml-3 block text-sm font-medium text-gray-700">
@@ -285,6 +340,7 @@
 								id="share-no"
 								name="share-photo"
 								type="radio"
+								value="false"
 								class="focus:ring-yellow-500 h-4 w-4 text-yellow-600 border-gray-300" />
 							<label for="share-no" class="ml-3 block text-sm font-medium text-gray-700">
 								Nee
