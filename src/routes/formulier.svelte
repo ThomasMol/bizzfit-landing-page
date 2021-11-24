@@ -5,15 +5,13 @@
 <script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
 	import { onMount } from 'svelte';
+	import { fly } from 'svelte/transition';
 
 	// This variable is a boolean, however, its changed using radio inputs with 1 or a 0
 	// Hopefully 1 and 0 are parsed as booleans to true and false
 	let knowsCalorieCount = 1;
 
-	let activityType = {
-		name: 'Badminton',
-		met: 6
-	};
+	let activityType = 'Wielrennen';
 
 	let weight: number;
 	let time: number;
@@ -30,122 +28,39 @@
 		return (time * met * weight * 3.5) / 200;
 	};
 
-	$: calorie = calculateCalories(time, activityType.met, weight);
+	$: calorie = calculateCalories(time, activityTypes.get(activityType), weight);
 
-	const activityTypes = [
-		{
-			name: 'Badminton',
-			met: 6
-		},
-		{
-			name: 'Basketball',
-			met: 6.5
-		},
-		{
-			name: 'Boxen',
-			met: 8
-		},
-		{
-			name: 'Calisthenics',
-			met: 3.8
-		},
-		{
-			name: 'Cricket',
-			met: 4.8
-		},
-		{
-			name: 'Crossfit',
-			met: 6
-		},
-		{
-			name: 'Dansen',
-			met: 7.8
-		},
-		{
-			name: 'Fietsen',
-			met: 7
-		},
-		{
-			name: 'Gewichtheffen',
-			met: 5
-		},
-		{
-			name: 'Golf',
-			met: 4.8
-		},
-		{
-			name: 'Gymnastiek',
-			met: 3.8
-		},
-		{
-			name: 'Handbal',
-			met: 8
-		},
-		{
-			name: 'Hardlopen',
-			met: 10
-		},
-		{
-			name: 'Hockey',
-			met: 7.8
-		},
-		{
-			name: 'Honkbal',
-			met: 5
-		},
-		{
-			name: 'IJshockey',
-			met: 8
-		},
-		{
-			name: 'Paardrijden',
-			met: 5.5
-		},
-		{
-			name: 'Roeien',
-			met: 12
-		},
-		{
-			name: 'Roeimachine',
-			met: 7
-		},
-		{
-			name: 'Schaatsen',
-			met: 7
-		},
-		{
-			name: 'Skieen',
-			met: 7
-		},
-		{
-			name: 'Squash',
-			met: 7.3
-		},
-		{
-			name: 'Tennis',
-			met: 7.3
-		},
-		{
-			name: 'Voetballen',
-			met: 7
-		},
-		{
-			name: 'Wandelen',
-			met: 3.5
-		},
-		{
-			name: 'Wielrennen',
-			met: 11
-		},
-		{
-			name: 'Yoga',
-			met: 3
-		},
-		{
-			name: 'Zwemmen',
-			met: 7
-		}
-	];
+	const activityTypes = new Map([
+		['Badminton', 6],
+		['Basketball', 6.5],
+		['Boxen', 8],
+		['Calisthenics', 3.8],
+		['Cricket', 4.8],
+		['Crossfit', 6],
+		['Dansen', 7.8],
+		['Fietsen', 7],
+		['Gewichtheffen', 5],
+		['Golf', 4.8],
+		['Gymnastiek', 3.8],
+		['Handbal', 8],
+		['Hardlopen', 10],
+		['Hockey', 7.8],
+		['Honkbal', 5],
+		['IJshockey', 8],
+		['Paardrijden', 5.5],
+		['Roeien', 12],
+		['Roeimachine', 7],
+		['Schaatsen', 7],
+		['Skieen', 7],
+		['Squash', 7.3],
+		['Tennis', 7.3],
+		['Voetballen', 7],
+		['Wandelen', 3.5],
+		['Wielrennen', 11],
+		['Yoga', 3],
+		['Zwemmen', 7]
+	]);
+
 </script>
 
 <svelte:head>
@@ -157,12 +72,7 @@
 		<h1 class="font-bold italic text-4xl text-yellow-500 py-6 text-center">BizzFit</h1>
 		<p class="text-lg mb-2">Vul hier de gegevens in van je activiteit!</p>
 		<div class="border rounded-lg p-4 bg-gray-50">
-			<form
-				name="activities"
-				method="POST"
-				data-netlify="true"
-				action="/dankjewel"
-				class="space-y-5">
+			<form name="activities" method="GET" data-netlify="true" action="" class="space-y-5">
 				<input type="hidden" name="form-name" value="activities" />
 
 				<div class="col-span-6 sm:col-span-3">
@@ -191,15 +101,14 @@
 				<div class="col-span-6 sm:col-span-3">
 					<label for="type-activity" class="block text-sm font-medium text-gray-700"
 						>Activiteit soort</label>
-					<!-- TODO now only submits the met score, not name of activity in form submission -->
 					<select
 						id="type-activity"
 						name="type-activity"
 						autocomplete="type-activity"
 						bind:value={activityType}
 						class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm">
-						{#each activityTypes as activityType}
-							<option value={activityType}>{activityType.name}</option>
+						{#each [...activityTypes.entries()] as [key, value]}
+							<option value={key}>{key}</option>
 						{/each}
 					</select>
 				</div>
@@ -251,7 +160,7 @@
 				</fieldset>
 
 				{#if !knowsCalorieCount}
-					<div class="col-span-6 sm:col-span-3">
+					<div class="col-span-6 sm:col-span-3" transition:fly="{{ y: -20, duration: 400 }}">
 						<label for="calories" class="block text-sm font-medium text-gray-700"
 							>Hoeveel kilogram weeg je? (We slaan deze data niet op!)</label>
 						<input
@@ -284,7 +193,6 @@
 							name="calories"
 							id="calories"
 							min="0"
-							bind:value={calorie}
 							required
 							class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 					</div>
