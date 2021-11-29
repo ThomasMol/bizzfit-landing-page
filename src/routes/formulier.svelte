@@ -73,7 +73,8 @@
 		<h1 class="font-bold italic text-4xl text-yellow-500 py-6 text-center">BizzFit</h1>
 		<p class="text-lg mb-2">Vul hier de gegevens in van je activiteit!</p>
 		<div class="border rounded-lg p-4 bg-gray-50">
-			<form name="activities" method="POST" data-netlify="true" action="/dankjewel" class="space-y-5">
+			<!-- <form name="activities" method="POST" data-netlify="true" action="/dankjewel" class="space-y-5"> -->
+			<form name="activities" method="POST" action="https://formspree.io/f/xlezrgvz" enctype="multipart/form-data" class="space-y-5">
 				<input type="hidden" name="form-name" value="activities" />
 				<div class="col-span-6 sm:col-span-3">
 					<label for="name" class="block text-sm font-medium text-gray-700">Je naam *</label>
@@ -84,23 +85,11 @@
 						autocomplete="given-name"
 						required
 						class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
-				</div>
-
-				<div class="">
-					<label for="email-address" class="block text-sm font-medium text-gray-700"
-						>Je emailadres *</label>
-					<input
-						type="text"
-						name="email-address"
-						id="email-address"
-						autocomplete="email"
-						required
-						class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
-				</div>
+				</div>			
 
 				<div class="">
 					<label for="type-activity" class="block text-sm font-medium text-gray-700"
-						>Activiteit soort</label>
+						>Activiteit soort <strong>(staat je activiteit hier niet bij? Zet dan je wat je gedaan hebt in de opmerkingen onderaan)</strong></label>
 					<select
 						id="type-activity"
 						name="type-activity"
@@ -134,20 +123,20 @@
 					<div class="mt-4 space-y-4">
 						<div class="flex items-center">
 							<input
-								id="manual-calorie-yes"
-								name="manual-calorie"
+								id="knows-calorie-yes"
+								name="knows-calorie"
 								type="radio"
 								bind:group={knowsCalorieCount}
 								value={1}
 								class="focus:ring-yellow-500 h-4 w-4 text-yellow-600 border-gray-300" />
-							<label for="manual-calorie-yes" class="ml-3 block text-sm font-medium text-gray-700">
+							<label for="knows-calorie-yes" class="ml-3 block text-sm font-medium text-gray-700">
 								Ja
 							</label>
 						</div>
 						<div class="flex items-center">
 							<input
-								id="manual-calorie-no"
-								name="manual-calorie"
+								id="knows-calorie-no"
+								name="knows-calorie"
 								type="radio"
 								bind:group={knowsCalorieCount}
 								value={0}
@@ -210,7 +199,7 @@
 
 				<div>
 					<label for="file-upload" class="block text-sm font-medium text-gray-700">
-						Screenshot of foto van je activiteit *
+						Screenshot en/of foto van je activiteit *
 					</label>
 					<div class="flex text-sm text-gray-600">
 						<label
@@ -222,6 +211,7 @@
 								type="file"
 								accept="image/jpeg,image/gif,image/png,image/webp,image/svg+xml"
 								class="focus-within:outline-none"
+								multiple
 								required />
 						</label>
 					</div>
@@ -252,6 +242,37 @@
 								value="false"
 								class="focus:ring-yellow-500 h-4 w-4 text-yellow-600 border-gray-300" />
 							<label for="share-no" class="ml-3 block text-sm font-medium text-gray-700">
+								Nee
+							</label>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div>
+						<legend class="text-sm font-medium text-gray-700"
+							>Mogen we je naam en score laten zien op het scorebord?</legend>
+					</div>
+					<div class="mt-4 space-y-4">
+						<div class="flex items-center">
+							<input
+								id="share-ranking-yes"
+								name="share-ranking"
+								type="radio"
+								value="true"
+								checked
+								class="focus:ring-yellow-500 h-4 w-4 text-yellow-600 border-gray-300" />
+							<label for="share-ranking-yes" class="ml-3 block text-sm font-medium text-gray-700">
+								Ja graag!
+							</label>
+						</div>
+						<div class="flex items-center">
+							<input
+								id="share-ranking-no"
+								name="share-ranking"
+								type="radio"
+								value="false"
+								class="focus:ring-yellow-500 h-4 w-4 text-yellow-600 border-gray-300" />
+							<label for="share-ranking-no" class="ml-3 block text-sm font-medium text-gray-700">
 								Nee
 							</label>
 						</div>
