@@ -150,23 +150,22 @@
 
 				{#if !knowsCalorieCount}
 					<div class="" transition:fly="{{ y: -25, duration: 400 }}">
-						<label for="calories" class="block text-sm font-medium text-gray-700"
+						<label for="weight" class="block text-sm font-medium text-gray-700"
 							>Hoeveel kilogram weeg je? (We slaan deze data niet op!)</label>
 						<input
 							type="number"
-							name="calories"
-							id="calories"
+							id="weight"
 							min="0"
 							bind:value={weight}
 							class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 					</div>
 					<div class="" transition:fly="{{ y: -25, duration: 400 }}">
-						<label for="calories" class="block text-sm font-medium text-gray-700"
+						<label for="calories-calculated" class="block text-sm font-medium text-gray-700"
 							>Zoveel calorie&euml;n heb je verbrand:</label>
 						<input
 							type="number"
-							name="calories"
-							id="calories"
+							name="calories-calculated"
+							id="calories-calculated"
 							min="0"
 							bind:value={calorie}
 							required

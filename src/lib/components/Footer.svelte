@@ -3,6 +3,7 @@
 </script>
 <footer class="py-4 md:py-8 bottom-0 absolute w-full bg-gray-50 px-2">
   <div class="container mx-auto">
-    &copy; {year} BizzFit - Alle rechten voorbehouden
+    <p>&copy; {year} BizzFit - Alle rechten voorbehouden</p>
+    <a href="https://bizzfit.site/formulier" class="text-blue-600 text-sm">Activiteiten formulier</a>
   </div>
 </footer>
