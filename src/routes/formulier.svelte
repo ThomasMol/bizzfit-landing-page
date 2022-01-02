@@ -231,6 +231,8 @@
 								multiple
 								required /> -->
 							<input
+								id="photo-upload"
+								name="photo-upload"
 								type="hidden"
 								role="uploadcare-uploader"
 								data-public-key="082a869d38222931c822"
