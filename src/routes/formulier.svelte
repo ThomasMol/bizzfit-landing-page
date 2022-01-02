@@ -84,7 +84,7 @@
 		<p class="text-lg mb-2">Vul hier de gegevens in van je activiteit!</p>
 		<div class="border rounded-lg p-4 bg-gray-50">
 			<!-- <form name="activities" method="POST" data-netlify="true" action="/dankjewel" class="space-y-5"> -->
-			<form name="activities" method="POST" action="https://formspree.io/f/xlezrgvz" enctype="multipart/form-data" class="space-y-5">
+			<form name="activities" method="POST" action="https://submit-form.com/OfpEiD2D" enctype="multipart/form-data" class="space-y-5">
 				<input type="hidden" name="form-name" value="activities" />
 				<div class="col-span-6 sm:col-span-3">
 					<label for="name" class="block text-sm font-medium text-gray-700">Je naam *</label>
@@ -220,6 +220,8 @@
 								type="file"
 								accept="image/jpeg,image/gif,image/png,image/webp,image/svg+xml"
 								class="focus-within:outline-none"
+								role="uploadcare-uploader"
+       					data-public-key="082a869d38222931c822"
 								multiple
 								required />
 						</label>
