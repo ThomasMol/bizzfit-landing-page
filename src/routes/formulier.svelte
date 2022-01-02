@@ -88,7 +88,7 @@
 				action="https://submit-form.com/OfpEiD2D"
 				class="space-y-5">
 				<!-- <input type="hidden" name="form-name" value="activities" /> -->
-				<input type="hidden" name="_redirect" value="/dankjewel" />
+				<input type="hidden" name="_redirect" value="https://bizzfit.site/dankjewel" />
 				<div class="col-span-6 sm:col-span-3">
 					<label for="name" class="block text-sm font-medium text-gray-700">Je naam *</label>
 					<input
