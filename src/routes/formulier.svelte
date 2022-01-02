@@ -223,11 +223,13 @@
 							<input
 								id="file-upload"
 								name="activity-photo"
-								type="file"
+								type="hidden"
 								accept="image/jpeg,image/gif,image/png,image/webp,image/svg+xml"
 								class="focus-within:outline-none"
 								role="uploadcare-uploader"
 								data-public-key="082a869d38222931c822"
+								data-multiple="true"
+    						data-system-dialog="true"
 								multiple
 								required />
 						</label>
@@ -320,3 +322,8 @@
 </section>
 
 <Footer />
+<style>
+	.uploadcare--widget__button.uploadcare--widget__button_type_open {
+			background-color: #f59f0b;
+	}
+</style>
