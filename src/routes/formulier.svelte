@@ -71,7 +71,6 @@
 		['Yoga', 3],
 		['Zwemmen', 7]
 	]);
-
 </script>
 
 <svelte:head>
@@ -84,8 +83,12 @@
 		<p class="text-lg mb-2">Vul hier de gegevens in van je activiteit!</p>
 		<div class="border rounded-lg p-4 bg-gray-50">
 			<!-- <form name="activities" method="POST" data-netlify="true" action="/dankjewel" class="space-y-5"> -->
-			<form name="activities" method="POST" action="https://submit-form.com/OfpEiD2D" enctype="multipart/form-data" class="space-y-5">
-				<input type="hidden" name="form-name" value="activities" />
+				<!-- formspark id = OfpEiD2D; use echo to test-->
+			<form					
+				action="https://submit-form.com/OfpEiD2D"
+				class="space-y-5">
+				<!-- <input type="hidden" name="form-name" value="activities" /> -->
+				<input type="hidden" name="_redirect" value="/dankjewel" />
 				<div class="col-span-6 sm:col-span-3">
 					<label for="name" class="block text-sm font-medium text-gray-700">Je naam *</label>
 					<input
@@ -95,11 +98,14 @@
 						autocomplete="given-name"
 						required
 						class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
-				</div>			
+				</div>
 
 				<div class="">
 					<label for="type-activity" class="block text-sm font-medium text-gray-700"
-						>Activiteit soort <strong>(staat je activiteit hier niet bij? Zet dan je wat je gedaan hebt in de opmerkingen onderaan)</strong></label>
+						>Activiteit soort <strong
+							>(staat je activiteit hier niet bij? Zet dan je wat je gedaan hebt in de opmerkingen
+							onderaan)</strong
+						></label>
 					<select
 						id="type-activity"
 						name="type-activity"
@@ -159,7 +165,7 @@
 				</fieldset>
 
 				{#if !knowsCalorieCount}
-					<div class="" transition:fly="{{ y: -25, duration: 400 }}">
+					<div class="" transition:fly={{ y: -25, duration: 400 }}>
 						<label for="weight" class="block text-sm font-medium text-gray-700"
 							>Hoeveel kilogram weeg je? (We slaan deze data niet op!)</label>
 						<input
@@ -169,7 +175,7 @@
 							bind:value={weight}
 							class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 					</div>
-					<div class="" transition:fly="{{ y: -25, duration: 400 }}">
+					<div class="" transition:fly={{ y: -25, duration: 400 }}>
 						<label for="calories-calculated" class="block text-sm font-medium text-gray-700"
 							>Zoveel calorie&euml;n heb je verbrand:</label>
 						<input
@@ -221,7 +227,7 @@
 								accept="image/jpeg,image/gif,image/png,image/webp,image/svg+xml"
 								class="focus-within:outline-none"
 								role="uploadcare-uploader"
-       					data-public-key="082a869d38222931c822"
+								data-public-key="082a869d38222931c822"
 								multiple
 								required />
 						</label>
