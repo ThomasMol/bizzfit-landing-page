@@ -83,10 +83,8 @@
 		<p class="text-lg mb-2">Vul hier de gegevens in van je activiteit!</p>
 		<div class="border rounded-lg p-4 bg-gray-50">
 			<!-- <form name="activities" method="POST" data-netlify="true" action="/dankjewel" class="space-y-5"> -->
-				<!-- formspark id = OfpEiD2D; use echo to test-->
-			<form					
-				action="https://submit-form.com/OfpEiD2D"
-				class="space-y-5">
+			<!-- formspark id = OfpEiD2D; use echo to test-->
+			<form action="https://submit-form.com/OfpEiD2D" class="space-y-5">
 				<!-- <input type="hidden" name="form-name" value="activities" /> -->
 				<input type="hidden" name="_redirect" value="https://bizzfit.site/dankjewel" />
 				<div class="col-span-6 sm:col-span-3">
@@ -220,7 +218,7 @@
 						<label
 							for="file-upload"
 							class="relative cursor-pointer px-2 py-3 bg-white rounded-md font-medium text-yellow-600 hover:text-yellow-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-yellow-500">
-							<input
+							<!-- <input
 								id="file-upload"
 								name="activity-photo"
 								type="hidden"
@@ -231,7 +229,13 @@
 								data-multiple="true"
     						data-system-dialog="true"
 								multiple
-								required />
+								required /> -->
+							<input
+								type="hidden"
+								role="uploadcare-uploader"
+								data-public-key="082a869d38222931c822"
+								data-multiple="true"
+								data-system-dialog="true" />
 						</label>
 					</div>
 				</div>
@@ -322,8 +326,9 @@
 </section>
 
 <Footer />
+
 <style>
 	.uploadcare--widget__button.uploadcare--widget__button_type_open {
-			background-color: #f59f0b;
+		background-color: #f59f0b;
 	}
 </style>
