@@ -32,6 +32,8 @@
 	$: calorie = calculateCalories(time, activityTypes.get(activityType), weight);
 
 	const activityTypes = new Map([
+		['Aerobics', 7],
+		['Aqua aerobics', 5.3],
 		['Badminton', 6],
 		['Basketball', 6.5],
 		['Boxen', 8],
@@ -39,22 +41,30 @@
 		['Cricket', 4.8],
 		['Crossfit', 6],
 		['Dansen', 7.8],
-		['Fietsen', 7],
-		['Gewichtheffen', 5],
+		['Fietsen (normaal)', 7],
+		['Gewichtheffen/fitness', 6],
 		['Golf', 4.8],
 		['Gymnastiek', 3.8],
 		['Handbal', 8],
 		['Hardlopen', 10],
+		['Hiken', 5.5],
 		['Hockey', 7.8],
 		['Honkbal', 5],
 		['IJshockey', 8],
+		['Kitesurfen', 11],
+		['Mountainbiking', 8.5],
 		['Paardrijden', 5.5],
+		['Padel', 8],
 		['Roeien', 12],
 		['Roeimachine', 7],
 		['Schaatsen', 7],
-		['Skieen', 7],
+		['Skieen', 6],
+		['Snowboarden', 6],
+		['Spinnen', 9],
 		['Squash', 7.3],
+		['Suppen', 3],
 		['Tennis', 7.3],
+		['Trampoline springen', 4],
 		['Voetballen', 7],
 		['Wandelen', 3.5],
 		['Wielrennen', 11],
@@ -246,7 +256,7 @@
 						</div>
 					</div>
 				</fieldset>
-				<fieldset>
+				<!-- <fieldset>
 					<div>
 						<legend class="text-sm font-medium text-gray-700"
 							>Mogen we je naam en score laten zien op het scorebord?</legend>
@@ -276,7 +286,7 @@
 							</label>
 						</div>
 					</div>
-				</fieldset>
+				</fieldset> -->
 
 				<div class="mb-4 col-span-6 sm:col-span-3">
 					<label for="message" class="block text-sm font-medium text-gray-700"
