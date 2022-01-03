@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	export const prerender = false;
+	export const prerender = true;
 </script>
 
 <script lang="ts">
@@ -23,6 +23,7 @@
 	onMount(() => {
 		userAgent = navigator.userAgent;
 		submissionDate = Date.now();
+		
 	});
 
 	const calculateCalories = (time: number, met: number, weight: number) => {
@@ -212,7 +213,7 @@
 
 				<div>
 					<label for="file-upload" class="block text-sm font-medium text-gray-700">
-						Screenshot en/of foto van je activiteit *
+						Screenshot en/of foto van je activiteit
 					</label>
 					<div class="flex text-sm text-gray-600">
 						<label
@@ -230,6 +231,7 @@
     						data-system-dialog="true"
 								multiple
 								required /> -->
+							<!-- svelte-ignore a11y-unknown-role -->
 							<input
 								id="photo-upload"
 								name="photo-upload"
@@ -328,9 +330,3 @@
 </section>
 
 <Footer />
-
-<style>
-	.uploadcare--widget__button.uploadcare--widget__button_type_open {
-		background-color: #f59f0b;
-	}
-</style>
