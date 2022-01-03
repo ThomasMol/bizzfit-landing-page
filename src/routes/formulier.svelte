@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	export const prerender = true;
+	export const prerender = false;
 </script>
 
 <script lang="ts">
@@ -23,7 +23,6 @@
 	onMount(() => {
 		userAgent = navigator.userAgent;
 		submissionDate = Date.now();
-		
 	});
 
 	const calculateCalories = (time: number, met: number, weight: number) => {
@@ -231,7 +230,6 @@
     						data-system-dialog="true"
 								multiple
 								required /> -->
-							<!-- svelte-ignore a11y-unknown-role -->
 							<input
 								id="photo-upload"
 								name="photo-upload"
@@ -239,7 +237,8 @@
 								role="uploadcare-uploader"
 								data-public-key="082a869d38222931c822"
 								data-multiple="true"
-								data-system-dialog="true" />
+								data-system-dialog="true" 
+								data-images-only="true"/>
 						</label>
 					</div>
 				</div>
