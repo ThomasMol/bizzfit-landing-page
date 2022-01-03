@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	export const prerender = false;
+	export const prerender = true;
 </script>
 
 <script lang="ts">
@@ -317,9 +317,3 @@
 </section>
 
 <Footer />
-
-<style>
-	.uploadcare--widget__button.uploadcare--widget__button_type_open {
-		background-color: #f59f0b;
-	}
-</style>
