@@ -1,5 +1,6 @@
 import preprocess from 'svelte-preprocess';
 import netlifyAdapter from '@sveltejs/adapter-netlify';
+import vercelAdapter from '@sveltejs/adapter-vercel';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,7 +13,7 @@ const config = {
 	kit: {
 		// hydrate the <body id="svelte"> element in src/app.html		
 		target: '#svelte',
-		adapter: netlifyAdapter()
+		adapter: vercelAdapter()
 	}
 };
 
