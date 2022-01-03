@@ -221,7 +221,7 @@
 							<input
 								id="file-upload"
 								name="activity-photo"
-								type="hidden"
+								type="file"
 								accept="image/jpeg,image/gif,image/png,image/webp,image/svg+xml"
 								class="focus-within:outline-none"
 								multiple
