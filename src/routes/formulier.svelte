@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	export const prerender = false;
+	export const prerender = true;
 </script>
 
 <script lang="ts">
@@ -7,6 +7,7 @@
 	import { onMount } from 'svelte';
 	import { fade, fly, scale } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import uploadcare from "uploadcare-widget";
 
 	// This variable is a boolean, however, its changed using radio inputs with 1 or a 0
 	// Hopefully 1 and 0 are parsed as booleans to true and false
@@ -230,17 +231,16 @@
     						data-system-dialog="true"
 								multiple
 								required /> -->
+								<input
+									id="photo-upload"
+									name="photo-upload"
+									type="hidden"
+									role="uploadcare-uploader"
+									data-multiple="true"
+									data-system-dialog="true" 
+									data-images-only="true"/>
 							</label>
 						</div>
-						<input
-							id="photo-upload"
-							name="photo-upload"
-							type="hidden"
-							role="uploadcare-uploader"
-							data-public-key="082a869d38222931c822"
-							data-multiple="true"
-							data-system-dialog="true" 
-							data-images-only="true"/>
 				</div>
 				<fieldset>
 					<div>
