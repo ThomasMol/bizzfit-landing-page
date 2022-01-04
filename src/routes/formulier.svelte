@@ -216,7 +216,7 @@
 					</label>
 					<div class="flex text-sm text-gray-600">
 						<label
-							for="file-upload"
+							for="photo-upload"
 							class="relative cursor-pointer px-2 py-3 bg-white rounded-md font-medium text-yellow-600 hover:text-yellow-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-yellow-500">
 							<!-- <input
 								id="file-upload"
@@ -230,17 +230,17 @@
     						data-system-dialog="true"
 								multiple
 								required /> -->
-							<input
-								id="photo-upload"
-								name="photo-upload"
-								type="hidden"
-								role="uploadcare-uploader"
-								data-public-key="082a869d38222931c822"
-								data-multiple="true"
-								data-system-dialog="true" 
-								data-images-only="true"/>
-						</label>
-					</div>
+							</label>
+						</div>
+						<input
+							id="photo-upload"
+							name="photo-upload"
+							type="hidden"
+							role="uploadcare-uploader"
+							data-public-key="082a869d38222931c822"
+							data-multiple="true"
+							data-system-dialog="true" 
+							data-images-only="true"/>
 				</div>
 				<fieldset>
 					<div>
