@@ -8,6 +8,7 @@
 	import { fade, fly, scale } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import uploadcare from "uploadcare-widget";
+	let widgetInput, widget;
 
 	// This variable is a boolean, however, its changed using radio inputs with 1 or a 0
 	// Hopefully 1 and 0 are parsed as booleans to true and false
@@ -24,6 +25,7 @@
 	onMount(() => {
 		userAgent = navigator.userAgent;
 		submissionDate = Date.now();
+		widget = uploadcare.Widget(widgetInput);
 	});
 
 	const calculateCalories = (time: number, met: number, weight: number) => {
@@ -235,10 +237,10 @@
 									id="photo-upload"
 									name="photo-upload"
 									type="hidden"
-									role="uploadcare-uploader"
 									data-multiple="true"
 									data-system-dialog="true" 
-									data-images-only="true"/>
+									data-images-only="true"
+									bind:this={widgetInput}/>
 							</label>
 						</div>
 				</div>
