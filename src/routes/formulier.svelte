@@ -15,6 +15,7 @@
 	let knowsCalorieCount = 1;
 
 	let activityType = 'Wielrennen';
+	let participant = 0;
 
 	let weight: number;
 	let time: number;
@@ -33,6 +34,23 @@
 	};
 
 	$: calorie = calculateCalories(time, activityTypes.get(activityType), weight);
+
+	const participants = new Map([
+		['Iemand anders',0],
+		['Henk Bergsma',1],
+		['Barbara de Graaf',2],
+		['Marion Koopman',3],
+		['Susanne Heiler',4],
+		['Kathelin Doornhof',5],
+		['Laura Hanssen',6],
+		['Liesbeth Hassing',7],
+		['Wilko Kuipers',8],
+		['Iris ten Hoopen',9],
+		['Tarik Kool',10],
+		['Gerhard Potma',11],
+		['Chantal Wiersma',12],
+		['Mark van Beek',13]
+	]);
 
 	const activityTypes = new Map([
 		['Aerobics', 7],
@@ -74,6 +92,7 @@
 		['Yoga', 3],
 		['Zwemmen', 7]
 	]);
+
 </script>
 
 <svelte:head>
@@ -91,22 +110,24 @@
 				<!-- <input type="hidden" name="form-name" value="activities" /> -->
 				<input type="hidden" name="_redirect" value="https://bizzfit.site/dankjewel" />
 				<div class="col-span-6 sm:col-span-3">
-					<label for="name" class="block text-sm font-medium text-gray-700">Je naam *</label>
-					<input
-						type="text"
-						name="name"
-						id="name"
-						autocomplete="given-name"
-						required
-						class="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+					<label for="name" class="block text-sm font-medium text-gray-700">Selecteer naam * <strong
+						>(staat je naam hier niet bij? zet dan je naam bij de opmerkingen onderaan dit formulier)</strong></label>
+					<select
+						id="participant"
+						name="participant"
+						bind:value={participant}
+						class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm">
+						{#each [...participants.entries()] as [key, value]}
+							<option value={value}>{key}</option>
+						{/each}
+					</select>
 				</div>
 
 				<div class="">
 					<label for="type-activity" class="block text-sm font-medium text-gray-700"
 						>Activiteit soort <strong
 							>(staat je activiteit hier niet bij? Zet dan je wat je gedaan hebt in de opmerkingen
-							onderaan)</strong
-						></label>
+							onderaan dit formulier)</strong></label>
 					<select
 						id="type-activity"
 						name="type-activity"
