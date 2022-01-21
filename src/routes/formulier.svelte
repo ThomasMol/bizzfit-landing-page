@@ -49,7 +49,9 @@
 		['Tarik Kool',10],
 		['Gerhard Potma',11],
 		['Chantal Wiersma',12],
-		['Mark van Beek',13]
+		['Mark van Beek',13],
+		['Shae-Lynn Spaargaren',14],
+		['Shirley Soeters',15]
 	]);
 
 	const activityTypes = new Map([
