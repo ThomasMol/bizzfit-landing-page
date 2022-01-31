@@ -5,6 +5,7 @@
 <section id="hero" class="">
 	<div class="container mx-auto px-2 md:px-0">
 		<div class="space-y-4 text-center py-20">
+			<img src="/images/logo.png" alt="BizzFit logo" width="60px" class="mx-auto">
 			<h1 class="text-4xl font-bold text-gray-800">Begin met BizzFit</h1>
 			<p class="text-gray-600 text-xl ">
 				Het platform om sporten en bewegen te stimuleren onder collega's!
