@@ -50,7 +50,7 @@
 				</div>
 			</div>
 			<div class="md:flex-1 space-y-4">
-				<h2 class="text-4xl font-bold text-gray-800">Al meer dan 30,000 calorie&euml;n vebrand!</h2>
+				<h2 class="text-4xl font-bold text-gray-800">Al meer dan 50,000 calorie&euml;n vebrand!</h2>
 
 				<p class="text-gray-600"></p>
 			</div>

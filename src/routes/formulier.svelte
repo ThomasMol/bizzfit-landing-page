@@ -83,6 +83,7 @@
 		['Roeien', 12],
 		['Roeimachine', 7],
 		['Schaatsen', 7],
+		['Skateboarden', 5],
 		['Skieen', 6],
 		['Snowboarden', 6],
 		['Spinnen', 9],
