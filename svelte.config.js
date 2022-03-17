@@ -9,9 +9,7 @@ const config = {
         postcss: true
     })],
 
-	kit: {
-		// hydrate the <body id="svelte"> element in src/app.html		
-		target: '#svelte',
+	kit: {	
 		adapter: netlifyAdapter()
 	}
 };

@@ -1,11 +1,18 @@
 <script lang="ts">
-  let showMenu = false;
+	let showMenu = false;
 </script>
 
 <nav class="">
-	<div class="container mx-auto flex py-4  px-6 md:px-0 justify-between flex-wrap">
-		<div class="flex items-center flex-shrink-0 mr-6">			
-			<a href="/" class="text-xl font-bold">BizzFit</a>
+	<div class="container mx-auto flex py-4 px-6 md:px-2 justify-between flex-wrap">
+		<div class="mr-6">
+			<a href="/" class="text-xl font-bold inline-flex">
+				<img
+					src="/images/logo.png"
+					alt="BizzFit logo"
+					width="30"
+					height="30"
+					class="rounded-full mr-4" />
+				BizzFit</a>
 		</div>
 		<div class="block md:hidden">
 			<button
@@ -29,17 +36,17 @@
 			</button>
 		</div>
 		<div id="nav-content" class:hidden={!showMenu} class="w-full md:w-auto md:block">
-			<ul class="flex flex-col md:flex-row justify-end items-center font-bold gap-y-3">				
+			<ul class="flex flex-col md:flex-row justify-end items-center font-bold gap-y-3">
 				<li>
 					<a
-						class="inline-block py-2 px-4 no-underline text-gray-500 hover:text-blue-900"
-						href="/#features">Features</a>
+						class="inline-block py-2 px-4 no-underline text-gray-500 hover:text-orange-900"
+						href="/#features">Product</a>
 				</li>
 				<li>
 					<a
-						class="inline-block py-2 px-4 no-underline text-gray-500 hover:text-blue-900"
+						class="inline-block py-2 px-4 no-underline text-gray-500 hover:text-orange-900"
 						href="/#contact">Contact</a>
-				</li>			
+				</li>
 			</ul>
 		</div>
 	</div>

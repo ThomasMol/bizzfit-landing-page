@@ -37,7 +37,7 @@
 
 	const participants = new Map([
 		['Iemand anders',0],
-		['Henk Bergsma',1],
+/* 		['Henk Bergsma',1],
 		['Barbara de Graaf',2],
 		['Marion Koopman',3],
 		['Susanne Heiler',4],
@@ -51,7 +51,7 @@
 		['Chantal Wiersma',12],
 		['Mark van Beek',13],
 		['Shae-Lynn Spaargaren',14],
-		['Shirley Soeters',15]
+		['Shirley Soeters',15] */
 	]);
 
 	const activityTypes = new Map([

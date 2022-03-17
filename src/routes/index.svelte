@@ -8,6 +8,7 @@
 	import Features from '$lib/components/Features.svelte';
 	import Contact from '$lib/components/Contact.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+import FitnessApps from '$lib/components/FitnessApps.svelte';
 </script>
 
 <svelte:head>
@@ -17,5 +18,6 @@
 <Header />
 <Hero />
 <Features />
+<FitnessApps />
 <Contact />
 <Footer />
