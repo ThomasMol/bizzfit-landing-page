@@ -1,5 +1,5 @@
 <section id="hero" class="bg-gray-50">
-	<div class="container mx-auto -mb-24 flex px-2 md:px-0">
+	<div class="container mx-auto -mb-24 px-4 md:flex md:px-0">
 		<div class="py-20">
 			<h1 class="mb-2 text-4xl font-bold text-gray-800">Begin met BizzFit</h1>
 			<h2 class="mb-4 text-xl font-bold text-orange-400">
@@ -23,11 +23,11 @@
 		</div>
 	</div>
 	<div class="container relative top-28 mx-auto flex justify-center">
-		<div class="m-10 rounded-lg bg-white p-10 text-center shadow-xl">
+		<div class="m-2 rounded-lg bg-white p-4 text-center shadow-xl md:m-10 md:p-10">
 			<h4 class="mb-3 text-3xl font-bold text-orange-400">50,000</h4>
 			<p class="text-semibold text-gray-700">Calorie&euml;n verbrand</p>
 		</div>
-		<div class="m-10 rounded-lg bg-white p-10 text-center shadow-xl">
+		<div class="m-2 rounded-lg bg-white p-4 text-center shadow-xl md:m-10 md:p-10">
 			<h4 class="mb-3 text-3xl font-bold text-orange-400">210</h4>
 			<p class="text-semibold text-gray-700">Activiteiten gelogt</p>
 		</div>

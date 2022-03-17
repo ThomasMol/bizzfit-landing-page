@@ -10,8 +10,8 @@
 		<h2 class="mb-16 text-center text-2xl font-bold text-gray-800">
 			Zo maken we jouw werkvloer fitter
 		</h2>
-		<div class="flex flex-wrap space-y-10  md:space-y-0 ">
-			<div class="mx-auto space-y-4 md:flex-1">
+		<div class="flex flex-wrap space-y-10 md:space-y-0 md:space-x-20">
+			<div class="space-y-4 md:flex-1">
 				<div class="inline-block h-16 rounded-lg bg-orange-100 p-3 text-orange-400">
 					<Run />
 				</div>
@@ -21,7 +21,7 @@
 					Fitbit en Strava.
 				</p>
 			</div>
-			<div class="mx-auto space-y-4 md:flex-1">
+			<div class="space-y-4 md:flex-1">
 				<div class="inline-block h-16 rounded-lg bg-orange-100 p-3 text-orange-400">
 					<Leaderboard />
 				</div>
@@ -30,7 +30,7 @@
 					Deelnemers doen mee aan een maandelijkste competities en zien hun score op de leaderboard.
 				</p>
 			</div>
-			<div class="mx-auto space-y-4 md:flex-1">
+			<div class="space-y-4 md:flex-1">
 				<div class="inline-block h-16 rounded-lg bg-orange-100 p-3 text-orange-400">
 					<Trophy />
 				</div>
