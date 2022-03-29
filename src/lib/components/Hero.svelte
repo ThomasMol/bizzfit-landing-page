@@ -19,7 +19,7 @@
 				alt="BizzFit feed page screenshot"
 				height="auto"
 				width="auto"
-				class="mx-auto h-auto w-[600px]" />
+				class="mx-auto w-auto md:h-[472px] md:absolute " />
 		</div>
 	</div>
 	<div class="container relative top-28 mx-auto flex justify-center">
