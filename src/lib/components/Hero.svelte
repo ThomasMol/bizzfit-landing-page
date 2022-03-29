@@ -28,7 +28,7 @@
 			<p class="text-semibold text-gray-700">Calorie&euml;n verbrand</p>
 		</div>
 		<div class="m-2 rounded-lg bg-white p-4 text-center shadow-xl md:m-10 md:p-10">
-			<h4 class="mb-3 text-3xl font-bold text-orange-400">198</h4>
+			<h4 class="mb-3 text-3xl font-bold text-orange-400">186</h4>
 			<p class="text-semibold text-gray-700">Activiteiten gelogt</p>
 		</div>
 	</div>
