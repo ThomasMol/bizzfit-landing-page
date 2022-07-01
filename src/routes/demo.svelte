@@ -5,7 +5,7 @@ import Header from "$lib/components/Header.svelte";
 
 </script>
 <Header/>
-<div class="h-screen">
+<div class="max-h-screen h-[60rem]">
 
 <iframe
   class="mx-auto h-full w-full"
