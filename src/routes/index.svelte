@@ -12,7 +12,7 @@ import FitnessApps from '$lib/components/FitnessApps.svelte';
 </script>
 
 <svelte:head>
-	<title>BizzFit</title>
+	<title>BizzFit | word fit</title>
 </svelte:head>
 
 <Header />
