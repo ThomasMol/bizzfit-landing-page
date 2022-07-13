@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev --host",
-		"build": "svite build",
+		"build": "vite build",
 		"preview": "vite preview --host",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -12,7 +12,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-netlify": "^1.0.0-next.32",
 		"@sveltejs/kit": "next",
 		"@tailwindcss/forms": "^0.5.0",
 		"@typescript-eslint/eslint-plugin": "^4.31.1",
@@ -32,6 +31,7 @@
 		"vite": "^2.9.14"
 	},
 	"devDependencies": {
+		"@sveltejs/adapter-netlify": "^1.0.0-next.68",
 		"autoprefixer": "^10.4.4",
 		"postcss": "^8.4.12",
 		"prettier": "^2.7.1",

@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-	import Footer from '$lib/components/Footer.svelte';
+	import Footer from '$lib/components/sections/Footer.svelte';
 	import { onMount } from 'svelte';
 	import { fade, fly, scale } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
