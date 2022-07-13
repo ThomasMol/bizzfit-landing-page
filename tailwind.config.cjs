@@ -6,10 +6,10 @@ const config = {
     container:{
 			screens: {
         sm: '600px',
-        md: '728px',
-        lg: '984px',
-        xl: '1200px',
-        '2xl': '1200px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1280px',
       },
 		},
   },

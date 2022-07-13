@@ -3,7 +3,7 @@
 </script>
 
 <script>
-	import Footer from '$lib/components/Footer.svelte';
+	import Footer from '$lib/components/sections/Footer.svelte';
 </script>
 
 <svelte:head>

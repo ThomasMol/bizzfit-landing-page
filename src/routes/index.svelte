@@ -1,23 +1,23 @@
-<script context="module" lang="ts">
-	export const prerender = true;
-</script>
-
 <script lang="ts">
-	import Header from '$lib/components/Header.svelte';
-	import Hero from '$lib/components/Hero.svelte';
-	import Features from '$lib/components/Features.svelte';
-	import Contact from '$lib/components/Contact.svelte';
-	import Footer from '$lib/components/Footer.svelte';
-import FitnessApps from '$lib/components/FitnessApps.svelte';
+	import Navigation from '$lib/components/sections/Navigation.svelte';
+	import Hero from '$lib/components/sections/Hero.svelte';
+	import Benefits from '$lib/components/sections/Benefits.svelte';
+	import Features from '$lib/components/sections/Features.svelte';
+	import Footer from '$lib/components/sections/Footer.svelte';
+	import Pricing from '$lib/components/sections/Pricing.svelte';
+	import Team from '$lib/components/sections/Team.svelte';
+	import Contact from '$lib/components/sections/Contact.svelte';
 </script>
 
 <svelte:head>
 	<title>BizzFit | word fit</title>
 </svelte:head>
 
-<Header />
+<Navigation />
 <Hero />
+<Benefits />
 <Features />
-<FitnessApps />
+<Pricing />
+<Team />
 <Contact />
 <Footer />
