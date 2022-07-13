@@ -1,3 +1,6 @@
+<script context="module" lang="ts">
+	export const prerender = true;
+</script>
 <script lang="ts">
 	import Navigation from '$lib/components/sections/Navigation.svelte';
 	import Hero from '$lib/components/sections/Hero.svelte';

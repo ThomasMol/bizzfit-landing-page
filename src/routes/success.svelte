@@ -1,7 +1,3 @@
-<script context="module" lang="ts">
-	export const prerender = true;
-</script>
-
 <script>
 	import Footer from '$lib/components/sections/Footer.svelte';
 </script>
