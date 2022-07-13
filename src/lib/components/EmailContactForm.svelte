@@ -13,7 +13,7 @@
 		placeholder="E-mail adres"
 		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-orange-500 focus:ring-orange-600" />
 	<input
-		type="tel"
+		type="text"
 		name="tel"
 		required
 		placeholder="Telefoonnummer"
