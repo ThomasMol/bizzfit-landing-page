@@ -6,3 +6,5 @@ node_modules
 /functions
 /.netlify
 .vercel_build_output
+build
+functions
