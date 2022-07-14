@@ -11,8 +11,8 @@ const config = {
 
 	kit: {	
 		adapter: netlifyAdapter({
-			edge: false,
-			split: true
+			edge: true,
+			split: false
 		}),
 		prerender: {
 			crawl: true,
