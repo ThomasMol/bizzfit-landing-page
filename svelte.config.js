@@ -13,13 +13,7 @@ const config = {
 		adapter: netlifyAdapter({
 			edge: true,
 			split: false
-		}),
-		prerender: {
-			crawl: true,
-			enabled: true,
-			onError: "continue",
-			entries: ['*'],
-	},
+		})
 	}
 };
 
