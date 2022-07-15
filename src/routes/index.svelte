@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<title>BizzFit | word fit</title>
+	<title>BizzFit</title>
 </svelte:head>
 
 <Navigation />
