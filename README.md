@@ -1,24 +1,24 @@
-# create-svelte
+# BizzFit landing page
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+Deze landing page is gemaakt met: [`SvelteKit`](https://kit.svelte.dev/);
+Dit is een web framework, kijk even rond in de docs en tutorials. Het is vrij simpel, vooral alleen maar HTML, en JavaScript. 
+Styling doen we met [`TailwindCSS`](https://tailwindcss.com).
+We hebben dus niet echt een aparte css bestand, dit wordt automatsich gegenereerd door Tailwind. Kijk daar ook even door de docs om te snappen wat het is en waarom dus alle html tags in dit project zoveel css classes hebben.
 
-## Creating a project
+## Local Developing
+Je hebt iig [`NodeJS`](https://nodejs.org/en/) nodig op je pc, en een browser, versie 16.* is prima voor nu.
 
-If you're seeing this, you've probably already done this step. Congrats!
 
+
+Pull dan de laatste commit van deze repo en open in vscode.
+Run dan de volgende commando in een terminal (in vscode). 
 ```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
+# installeer alle benodigde packages van npm
+npm install
 ```
+Volg dan de volgende instructies om de website te testen (en dus een live preview te zien van wat je aan het veranderen bent).
 
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've created a project and installed dependencies with `npm install`, start a development server (dit is dus local):
 
 ```bash
 npm run dev
@@ -26,13 +26,8 @@ npm run dev
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
+(Je kan dit ook allemaal niet doen, maar dan kun je niet je veranderingen bekijken voordat je je commit pushed naar github)
 
-## Building
+## Deploying
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+Als je klaar bent, push je je commit naar de 'main' branch, deze triggered automatisch een build op onze hosting (Netlify). Even minuutje wachten en dan staat de website online op https://bizzfit.app .
