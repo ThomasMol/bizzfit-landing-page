@@ -5,14 +5,14 @@
 <nav>
 	<div class="container mx-auto flex flex-wrap justify-between py-4 px-4 lg:px-16">
 		<div class="mr-6">
-			<a href="/" class="inline-flex text-2xl font-bold text-zinc-700">
+			<a href="/" class="inline-flex text-2xl text-zinc-700 font-['Coolvetica']">
 				<img
-					src="/images/logo.svg"
+					src="/images/logo.png"
 					alt="BizzFit logo"
 					width="30"
 					height="30"
-					class="mr-4 rounded" />
-				BizzFit</a>
+					class="mr-2 rounded " />
+				bizzfit</a>
 		</div>
 		<div class="block md:hidden">
 			<button
@@ -64,7 +64,7 @@
 				</li>
 				<li>
 					<a
-						class="inline-block rounded bg-orange-400 py-2 px-4 text-zinc-100 no-underline hover:bg-orange-500 hover:text-zinc-50"
+						class="inline-block rounded bg-gradient-to-tr from-orange-700 to-orange-600  py-2 px-4 text-zinc-100 no-underline hover:from-rose-700 hover:to-orange-600 hover:text-zinc-50"
 						href="/#contact">Plan een demo</a>
 				</li>
 			</ul>
