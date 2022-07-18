@@ -55,6 +55,11 @@
 				<li>
 					<a
 						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-orange-900"
+						href="/#blogs">Blog</a>
+				</li>
+				<li>
+					<a
+						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-orange-900"
 						href="/#contact">Contact</a>
 				</li>
 				<li>

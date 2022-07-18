@@ -10,6 +10,7 @@
 	import Pricing from '$lib/components/sections/Pricing.svelte';
 	import Team from '$lib/components/sections/Team.svelte';
 	import Contact from '$lib/components/sections/Contact.svelte';
+import Blogs from '$lib/components/sections/Blogs.svelte';
 </script>
 
 <svelte:head>
@@ -22,5 +23,6 @@
 <Features />
 <Pricing />
 <Team />
+<Blogs/>
 <Contact />
 <Footer />
