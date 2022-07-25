@@ -6,7 +6,7 @@
 		type="text"
 		name="name"
 		required
-		placeholder="Volledige naam"
+		placeholder="Voornaam & Achternaam"
 		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-orange-500 focus:ring-orange-600" />
 	<input
 		type="email"

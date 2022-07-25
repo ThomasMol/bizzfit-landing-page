@@ -21,19 +21,19 @@
 				<ul class="space-y-2 lg:mb-10">
 					<li class="border-b py-2">
 						<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span>
-						Korte uitleg van belangrijke benefit
+						Verbeter de vitaliteit onder werknemers
 					</li>
 					<li class="border-b py-2">
 						<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span>
-						Korte uitleg van belangrijke benefit
+						Ga challenges aan mét of tegen je collega’s
 					</li>
 					<li class="border-b py-2">
 						<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span>
-						Korte uitleg van belangrijke benefit
+						Makkelijk te linken met bijna alle gezondheidsapps
 					</li>
 					<li class="border-b py-2">
 						<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span>
-						Korte uitleg van belangrijke benefit
+						Dagelijks data over jouw gezondheidsprogressie
 					</li>
 				</ul>
 			</div>
@@ -41,19 +41,19 @@
 				<ul class="space-y-2 lg:mb-10">
 					<li class="border-b py-2">
 						<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span>
-						Korte uitleg van belangrijke benefit
+						Overzicht van de ranking binnen het bedrijf (optioneel)
 					</li>
 					<li class="border-b py-2">
 						<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span>
-						Korte uitleg van belangrijke benefit
+						Wordt beloond voor de persoonlijke- of groeps challenges 
 					</li>
 					<li class="border-b py-2">
 						<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span>
-						Korte uitleg van belangrijke benefit
+						Overzichtelijk dashboard met alle functies
 					</li>
 					<li class="border-b py-2">
 						<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span>
-						Korte uitleg van belangrijke benefit
+						Sportieve activiteiten makkelijk delen met je collega’s
 					</li>
 				</ul>
 			</div>

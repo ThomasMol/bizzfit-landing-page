@@ -7,9 +7,9 @@ import EmailContactForm from "../EmailContactForm.svelte";
 		<div class="md:flex-1">
 			<h2 class="pb-10 text-4xl font-semibold">Neem contact op</h2>
 			<p class="mb-4">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta porro nemo itaque
-				consequuntur dolore possimus laboriosam, quasi id similique earum facilis nobis vero, unde
-				explicabo totam consectetur provident nam sequi.
+				Klaar voor een fittere werkvloer? <br><br>
+				Ons team wil je graag face-to-face uitleggen hoe de app in elkaar zit en op welke manieren het jouw bedrijf kan helpen met de verbetering van de fysieke- en mentale gesteldheid van de werknemers. 
+				Vul hieronder je gegevens in en wij zullen zo snel mogelijk contact met je opnemen om je verder te helpen.
 			</p>
 			<a href="mailto:contact@bizzfit.app" class="font-semibold text-zinc-700"
 				>contact&commat;bizzfit.app</a>

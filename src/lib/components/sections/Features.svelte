@@ -17,8 +17,8 @@
 							<p class="ml-16 text-lg font-medium leading-6">Competitie</p>
 						</dt>
 						<dd class="mt-2 ml-16 text-base text-zinc-500">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-							suscipit eaque, iste dolor cupiditate blanditiis ratione.
+						   BizzFit biedt binnen je bedrijf een competitie aan. Degene die de meeste progressie maakt zal bovenaan de ranking staan. 
+						   Met behulp van updates over de competitie wordt je aangedreven om te blijven bewegen. Het is ook mogelijk om anoniem mee te doen aan de competitie.
 						</dd>
 					</div>
 					<div>
@@ -30,8 +30,8 @@
 							<p class="ml-16 text-lg font-medium leading-6">Challenges</p>
 						</dt>
 						<dd class="mt-2 ml-16 text-base text-zinc-500">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-							suscipit eaque, iste dolor cupiditate blanditiis ratione.
+							Meerdere challenges worden aangeboden om het bewegen te enthousiasmeren. Je kan meedoen aan individuele challenges, maar ook als groep een challenge doen.
+							Haal challenges en krijg gave beloningen!
 						</dd>
 					</div>
 					<div>
@@ -43,8 +43,8 @@
 							<p class="ml-16 text-lg font-medium leading-6">Beloningen</p>
 						</dt>
 						<dd class="mt-2 ml-16 text-base text-zinc-500">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-							suscipit eaque, iste dolor cupiditate blanditiis ratione.
+							Door lekker te bewegen met BizzFit kun je beloningen verdienen. Deze komen in verschillende vormen. Bijvoorbeeld:
+							Badges voor in de app, kortingscodes en échte trofeeën voor op je bureau.
 						</dd>
 					</div>
 				</dl>
@@ -86,8 +86,9 @@
 							<p class="ml-16 text-lg font-medium leading-6">Fitness tracking</p>
 						</dt>
 						<dd class="mt-2 ml-16 text-base text-zinc-500">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-							suscipit eaque, iste dolor cupiditate blanditiis ratione.
+							BizzFit maakt het makkelijk om je bewegen bij te houden. 
+							Door middel van de ingebouwde tracker kun je elke keer dat je gaat bewegen alles opnemen. Gebruik je al een gezondheidsapp zoals Strava of Apple Health?
+							Dan kun je direct vanuit die app je activiteiten naar BizzFit synchroniseren. Je hoeft dus niks extra bij te houden!
 						</dd>
 					</div>
 					<div>
@@ -99,8 +100,8 @@
 							<p class="ml-16 text-lg font-medium leading-6">Auto analytics</p>
 						</dt>
 						<dd class="mt-2 ml-16 text-base text-zinc-500">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-							suscipit eaque, iste dolor cupiditate blanditiis ratione.
+							Alle workout-data die je opneemt in de app wordt automatisch gebruikt om slimme analyses te doen. 
+							De inzichten worden met jou gedeeld om je beter te laten bewegen. Jouw data en analyses worden niet gedeeld met anderen.
 						</dd>
 					</div>
 				</dl>

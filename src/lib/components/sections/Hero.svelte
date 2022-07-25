@@ -11,16 +11,17 @@
 			</h2>
 			<ul class="lg:mb-10 space-y-2">
 				<li>
-					<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span> Korte
-					uitleg van belangrijke benefit
+					<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span> 
+					Verbeter de vitaliteit onder werknemers
+
 				</li>
 				<li>
-					<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span> Korte
-					uitleg van belangrijke benefit
+					<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span> 
+					Ga challenges aan mét of tegen je collega’s
 				</li>
 				<li>
-					<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span> Korte
-					uitleg van belangrijke benefit
+					<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span> 
+					Makkelijk te linken met bijna alle gezondheidsapps
 				</li>
 			</ul>
 			<div class="flex flex-wrap gap-4 md:gap-8">
