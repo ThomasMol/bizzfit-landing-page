@@ -7,28 +7,28 @@
 		name="name"
 		required
 		placeholder="Voornaam & Achternaam"
-		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-orange-500 focus:ring-orange-600" />
+		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-amber-500 focus:ring-amber-600" />
 	<input
 		type="email"
 		name="email"
 		required
 		placeholder="E-mail adres"
-		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-orange-500 focus:ring-orange-600" />
+		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-amber-500 focus:ring-amber-600" />
 	<input
 		type="text"
 		name="tel"
 		required
 		placeholder="Telefoonnummer"
-		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-orange-500 focus:ring-orange-600" />
+		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-amber-500 focus:ring-amber-600" />
 	<input
 		type="text"
 		name="organization"
 		required
 		placeholder="Bedrijfsnaam"
-		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-orange-500 focus:ring-orange-600" />
+		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-amber-500 focus:ring-amber-600" />
 	<button
 		type="submit"
-		class="rounded bg-orange-400 px-4 py-2 font-bold text-white transition ease-linear hover:bg-orange-500">
+		class="rounded bg-amber-400 px-4 py-2 font-bold text-white transition ease-linear hover:bg-amber-500">
 		Verstuur!
 	</button>
 </form>

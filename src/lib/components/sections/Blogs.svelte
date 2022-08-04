@@ -21,7 +21,7 @@
 						aan de behoeftes en verwachtingen van deze nieuwe groep werknemers te voldoen. Al
 						helemaal als het om welzijn gaat!
 					</p>
-					<p class="mt-4 font-semibold text-orange-400">Lees meer</p>
+					<p class="mt-4 font-semibold text-amber-400">Lees meer</p>
 				</div>
 			</a>
 			<a
@@ -40,7 +40,7 @@
 						applicaties te koppelen met BizzFit. De applicaties die tot nu toe gekoppeld kunnen
 						worden zijn als volgt
 					</p>
-					<p class="mt-4 font-semibold text-orange-400">Lees meer</p>
+					<p class="mt-4 font-semibold text-amber-400">Lees meer</p>
 				</div>
 			</a>
 		</div>

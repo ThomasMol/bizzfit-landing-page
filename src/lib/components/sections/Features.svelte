@@ -11,7 +11,7 @@
 					<div>
 						<dt>
 							<div
-								class="absolute flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100 p-3 text-orange-400">
+								class="absolute flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 p-3 text-amber-400">
 								<Run />
 							</div>
 							<p class="ml-16 text-lg font-medium leading-6">Competitie</p>
@@ -24,7 +24,7 @@
 					<div>
 						<dt>
 							<div
-								class="absolute flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100 p-3 text-orange-400">
+								class="absolute flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 p-3 text-amber-400">
 								<Run />
 							</div>
 							<p class="ml-16 text-lg font-medium leading-6">Challenges</p>
@@ -37,7 +37,7 @@
 					<div>
 						<dt>
 							<div
-								class="absolute flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100 p-3 text-orange-400">
+								class="absolute flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 p-3 text-amber-400">
 								<Run />
 							</div>
 							<p class="ml-16 text-lg font-medium leading-6">Beloningen</p>
@@ -80,7 +80,7 @@
 					<div>
 						<dt>
 							<div
-								class="absolute flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100 p-3 text-orange-400">
+								class="absolute flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 p-3 text-amber-400">
 								<Run />
 							</div>
 							<p class="ml-16 text-lg font-medium leading-6">Fitness tracking</p>
@@ -94,7 +94,7 @@
 					<div>
 						<dt>
 							<div
-								class="absolute flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100 p-3 text-orange-400">
+								class="absolute flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 p-3 text-amber-400">
 								<Run />
 							</div>
 							<p class="ml-16 text-lg font-medium leading-6">Auto analytics</p>

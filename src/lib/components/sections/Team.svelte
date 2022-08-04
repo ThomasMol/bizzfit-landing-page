@@ -5,17 +5,17 @@
 			<div>
 				<img src="/images/bastian.jpg" alt="" class="h-24 w-24 rounded-lg bg-zinc-100" />
 				<h6 class="py-2 text-xl font-semibold">Bastian</h6>
-				<p class="text-orange-700">Business lead</p>
+				<p class="text-amber-500">Business lead</p>
 			</div>
 			<div>
 				<img src="/images/thomas.jpg" alt="" class="h-24 w-24 rounded-lg bg-zinc-100" />
 				<h6 class="py-2 text-xl font-semibold">Thomas</h6>
-				<p class="text-orange-700">Tech lead</p>
+				<p class="text-amber-500">Tech lead</p>
 			</div>
 			<div>
 				<img src="/images/diederick.jpg" alt="" class="h-24 w-24 rounded-lg bg-zinc-100" />
 				<h6 class="py-2 text-xl font-semibold">Diederick</h6>
-				<p class="text-orange-700">Sales lead</p>
+				<p class="text-amber-500">Sales lead</p>
 			</div>
 		</div>
 	</div>

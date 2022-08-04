@@ -39,12 +39,12 @@
 			<ul class="flex flex-col items-center justify-end gap-y-3 font-bold md:flex-row">
 				<li>
 					<a
-						class="inline-block py-2 px-4 text-gray-500 no-underline hover:text-orange-900"
+						class="inline-block py-2 px-4 text-gray-500 no-underline hover:text-amber-900"
 						href="/#features">Product</a>
 				</li>
 				<li>
 					<a
-						class="inline-block py-2 px-4 text-gray-500 no-underline hover:text-orange-900"
+						class="inline-block py-2 px-4 text-gray-500 no-underline hover:text-amber-900"
 						href="/#contact">Contact</a>
 				</li>
 			</ul>

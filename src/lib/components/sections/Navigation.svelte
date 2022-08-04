@@ -39,32 +39,32 @@
 			<ul class="flex flex-col items-center justify-end gap-y-3 font-bold md:flex-row">
 				<li>
 					<a
-						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-orange-900"
+						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-amber-900"
 						href="/#features">Product</a>
 				</li>
 				<li>
 					<a
-						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-orange-900"
+						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-amber-900"
 						href="/#pricing">Tarieven</a>
 				</li>
 				<li>
 					<a
-						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-orange-900"
+						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-amber-900"
 						href="/#team">Ons team</a>
 				</li>
 				<li>
 					<a
-						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-orange-900"
+						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-amber-900"
 						href="/#blogs">Blog</a>
 				</li>
 				<li>
 					<a
-						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-orange-900"
+						class="inline-block py-2 px-4 text-zinc-500 no-underline hover:text-amber-900"
 						href="/#contact">Contact</a>
 				</li>
 				<li>
 					<a
-						class="inline-block rounded bg-gradient-to-tr from-orange-700 to-orange-600  py-2 px-4 text-zinc-100 no-underline hover:from-rose-700 hover:to-orange-600 hover:text-zinc-50"
+						class="inline-block rounded bg-gradient-to-tr from-amber-500 to-amber-600  py-2 px-4 text-zinc-100 no-underline hover:from-amber-700 hover:to-amber-600 hover:text-zinc-50"
 						href="/#contact">Plan een demo</a>
 				</li>
 			</ul>
