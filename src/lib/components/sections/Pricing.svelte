@@ -61,7 +61,7 @@
 		<div class="text-center mt-10">
 			<a
 				href="/#contact"
-				class="rounded bg-amber-500 py-2 px-20 text-center text-xl font-semibold text-zinc-100 no-underline hover:bg-amber-400 hover:text-zinc-50"
+				class="rounded bg-gradient-to-tr from-amber-500 to-amber-600 py-2 px-20 text-center text-xl font-semibold text-zinc-100 no-underline hover:from-amber-700 hover:to-amber-600 hover:text-zinc-50"
 				>Plan een demo</a>
 		</div>
 	</div>

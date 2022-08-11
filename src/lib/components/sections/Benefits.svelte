@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Leaderboard from '$lib/svg/Leaderboard.svelte';
-	import Run from '$lib/svg/Run.svelte';
-	import Trophy from '$lib/svg/Trophy.svelte';
+	import Sickleave from '$lib/svg/Sickleave.svelte';
+	import Productivity from '$lib/svg/Productivity.svelte';
+	import Teambuilding from '$lib/svg/Teambuilding.svelte';
 </script>
 
 <section id="benefits" class="my-20">
@@ -10,7 +10,7 @@
 		<div class="flex flex-wrap justify-between gap-10">
 			<div class="space-y-4 md:flex-1">
 				<div class="inline-block h-16 rounded-lg bg-amber-100 p-3 text-amber-400">
-					<Run />
+					<Sickleave />
 				</div>
 				<h3 class="text-xl font-semibold text-gray-800">Minder verzuim</h3>
 				<p class="text-gray-600">
@@ -20,7 +20,7 @@
 			</div>
 			<div class="space-y-4 md:flex-1">
 				<div class="inline-block h-16 rounded-lg bg-amber-100 p-3 text-amber-400">
-					<Leaderboard />
+					<Teambuilding />
 				</div>
 				<h3 class="text-xl font-semibold text-gray-800">Teambuilding</h3>
 				<p class="text-gray-600">
@@ -30,7 +30,7 @@
 			</div>
 			<div class="space-y-4 md:flex-1">
 				<div class="inline-block h-16 rounded-lg bg-amber-100 p-3 text-amber-400">
-					<Trophy />
+					<Productivity />
 				</div>
 				<h3 class="text-xl font-semibold text-gray-800">Beter werkprestaties</h3>
 				<p class="text-gray-600">
