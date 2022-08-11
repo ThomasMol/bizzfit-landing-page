@@ -7,12 +7,12 @@
 		<div class="mr-6">
 			<a href="/" class="inline-flex text-2xl text-zinc-700 font-['Coolvetica']">
 				<img
-					src="/images/logo.png"
+					src="/images/logo_basic.png"
 					alt="BizzFit logo"
 					width="30"
 					height="30"
 					class="mr-2 rounded " />
-				bizzfit</a>
+				BizzFit</a>
 		</div>
 		<div class="block md:hidden">
 			<button
