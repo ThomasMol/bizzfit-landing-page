@@ -45,7 +45,7 @@
 					</li>
 					<li class="border-b py-2">
 						<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span>
-						Word beloond voor de persoonlijke- of groeps challenges 
+						Word beloond voor de persoonlijke- of groeps challenges
 					</li>
 					<li class="border-b py-2">
 						<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span>
@@ -58,7 +58,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="text-center mt-10">
+		<div class="mt-10 text-center">
 			<a
 				href="/#contact"
 				class="rounded bg-gradient-to-tr from-amber-500 to-amber-600 py-2 px-20 text-center text-xl font-semibold text-zinc-100 no-underline hover:from-amber-700 hover:to-amber-600 hover:text-zinc-50"

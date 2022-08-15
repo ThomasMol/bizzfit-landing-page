@@ -9,7 +9,7 @@
 			<h2 class="mb-5 text-2xl font-semibold text-zinc-700">
 				De manier voor een fittere werkvloer
 			</h2>
-			<ul class="lg:mb-10 space-y-2">
+			<ul class="lg:mb-10 space-y-2 text-left">
 				<li>
 					<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-600"><SolidCheck /></span> 
 					Verbeter de vitaliteit onder werknemers
@@ -48,7 +48,7 @@
 					class="relative -top-1/2 left-1/2 -z-10 -ml-36 mt-10 h-72 w-72 rounded-full bg-amber-300 opacity-70 mix-blend-multiply blur-3xl filter" />
 				<div
 					class="relative -top-1/2 left-1/2 -z-10 -mt-10 h-72 w-72 rounded-full bg-blue-300 opacity-50 mix-blend-multiply blur-3xl filter" />
-			</div> -->
+			</div>  -->
 		</div>
 	</div>
 </section>

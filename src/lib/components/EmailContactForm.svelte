@@ -1,5 +1,5 @@
 <!-- <form name="contact-form" method="POST" data-netlify="true" action="/success" class="space-y-5">-->
-<form  action="https://submit-form.com/JjtKmMwV" class="space-y-5">
+<form action="https://submit-form.com/JjtKmMwV" class="space-y-5">
 	<!-- <input type="hidden" name="form-name" value="contact-form"> -->
 	<input type="hidden" name="_redirect" value="https://bizzfit.app/success" />
 	<input

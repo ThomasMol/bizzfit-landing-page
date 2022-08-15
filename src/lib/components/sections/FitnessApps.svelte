@@ -3,7 +3,7 @@
 		<h2 class="mb-16 text-center text-2xl font-bold text-gray-800">
 			Verbind gemakkelijk met al je fitness apps en wearables
 		</h2>
-		<div class="grid grid-cols-2 text-center md:grid-cols-4 md:gap-4 gap-y-12">
+		<div class="grid grid-cols-2 gap-y-12 text-center md:grid-cols-4 md:gap-4">
 			<div class="mx-auto space-y-4">
 				<img
 					src="/images/strava.webp"
