@@ -5,7 +5,7 @@
 <section id="hero">
 	<div class="container mx-auto lg:flex px-4 lg:px-16">
 		<div class="flex-1 basis-1/2 py-8 lg:py-20 text-center lg:text-left">
-			<h1 class="mb-3 text-4xl font-semibold">Begin met <span class="text-amber-500 font-['Coolvetica']">BizzFit</span></h1>
+			<h1 class="mb-3 text-4xl font-semibold">Begin met <span class="text-amber-500 font-coolvetica">BizzFit</span></h1>
 			<h2 class="mb-5 text-2xl font-semibold text-zinc-700">
 				De manier voor een fittere werkvloer
 			</h2>

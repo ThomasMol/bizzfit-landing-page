@@ -5,9 +5,9 @@
 <nav>
 	<div class="container mx-auto flex flex-wrap justify-between py-4 px-4 lg:px-16">
 		<div class="mr-6">
-			<a href="/" class="inline-flex font-['Coolvetica'] text-2xl text-zinc-700">
+			<a href="/" class="inline-flex font-coolvetica text-2xl text-zinc-700">
 				<img
-					src="/images/logo_basic.png"
+					src="/images/logo-inverted.svg"
 					alt="BizzFit logo"
 					width="30"
 					height="30"

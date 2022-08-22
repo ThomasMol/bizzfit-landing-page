@@ -1,10 +1,10 @@
 <script lang="ts">
 
 import Footer from "$lib/components/sections/Footer.svelte";
-import Header from "$lib/components/sections/Header.svelte";
+import Navigation from "$lib/components/sections/Navigation.svelte";
 
 </script>
-<Header/>
+<Navigation/>
 <div class="max-h-screen h-[60rem]">
 
 <iframe

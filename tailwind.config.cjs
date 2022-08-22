@@ -3,7 +3,9 @@ const config = {
 
   theme: {
     extend: {
-     
+     fontFamily:{
+      'coolvetica':['Coolvetica','Helvetica','sans-serif']
+     },
     },
     container:{
 			screens: {
