@@ -34,7 +34,7 @@
 				<div class="inline-block h-16 rounded-lg bg-amber-100 p-3 text-amber-400">
 					<Productivity />
 				</div>
-				<h3 class="text-xl font-semibold text-gray-800">Beter werkprestaties</h3>
+				<h3 class="text-xl font-semibold text-gray-800">Betere werkprestaties</h3>
 				<p class="text-gray-600">
 					Een fitte werker staat gelijk aan een productieve werker. Onderzoek wijst uit dat
 					gezondheid een grote rol speelt in de productiviteit op de werkvloer. Met behulp van
