@@ -10,7 +10,7 @@
 	import Trophy from '$lib/svg/Trophy.svelte';
 </script>
 
-<section id="features" class="my-40">
+<section id="features" class=" bg-bottom bg-no-repeat bg-[url('/images/backgrounds/gradient2_mobile.svg')] lg:bg-[url('/images/backgrounds/gradient2_lg.svg')]">
 	<div class="container mx-auto px-4 py-10 lg:px-16">
 		<div class="mb-40 flex flex-wrap">
 			<div class="md:flex-1">

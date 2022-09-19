@@ -1,4 +1,4 @@
-<section id="team" class="mb-36">
+<section id="team" class="pb-20 mb-36">
 	<div class="container mx-auto px-4 lg:px-16">
 		<h2 class="mb-10 py-10 text-center text-4xl font-semibold">Ons team</h2>
 		<div class="flex flex-wrap justify-evenly gap-4 text-center">

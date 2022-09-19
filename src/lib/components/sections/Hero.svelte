@@ -2,7 +2,7 @@
 	import SolidCheck from '$lib/svg/SolidCheck.svelte';
 </script>
 
-<section id="hero">
+<section id="hero" class="bg-right bg-no-repeat  bg-[url('/images/backgrounds/gradient_mobile.svg')] lg:bg-[url('/images/backgrounds/gradient_lg.svg')]">
 	<div class="container mx-auto lg:flex px-4 lg:px-16">
 		<div class="flex-1 basis-1/2 py-8 lg:py-20 text-center lg:text-left">
 			<h1 class="mb-3 text-4xl font-semibold">Begin met <span class="text-amber-500 font-coolvetica">BizzFit</span></h1>
