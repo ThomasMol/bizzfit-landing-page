@@ -1,7 +1,7 @@
 ---
 title: 'Welke apps kun je koppelen aan BizzFit?'
 date: '14 augustus 2022'
-thumbnail: '/images/uploads/smartwatch.png'
+thumbnail: '/uploads/smartwatch.png'
 layout: 'blog'
 ---
 Om goed gebruik te kunnen maken moet er natuurlijk wel de mogelijkheid zijn om applicaties te koppelen met BizzFit. De applicaties die tot nu toe gekoppeld kunnen worden zijn als volgt.

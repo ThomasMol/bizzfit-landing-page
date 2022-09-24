@@ -1,7 +1,7 @@
 ---
 title: 'Mentale en fysieke welzijn op de werkvloer'
 date: '18 juli 2022'
-thumbnail: '/images/uploads/welzijn.png'
+thumbnail: '/uploads/welzijn.png'
 layout: 'blog'
 ---
 
