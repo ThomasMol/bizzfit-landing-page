@@ -1,7 +1,3 @@
-<script context="module" lang="ts">
-	export const prerender = false;
-</script>
-
 <script lang="ts">
 	import Footer from '$lib/components/sections/Footer.svelte';
 	import { onMount } from 'svelte';
