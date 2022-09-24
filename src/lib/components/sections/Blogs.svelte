@@ -3,7 +3,7 @@
 		<h1 class="py-10 text-center text-4xl font-semibold">Blog</h1>
 		<div class="flex flex-wrap justify-between gap-10">
 			<a
-				href="/blogs/mentale-en-fysieke-welzijn-op-de-werkvloer"
+				href="/blog/mentale-en-fysieke-welzijn-op-de-werkvloer"
 				class="space-y-4 rounded border bg-zinc-50 hover:bg-zinc-100 hover:shadow-sm md:flex-1">
 				<img
 					src="/images/welzijn.png"
@@ -25,7 +25,7 @@
 				</div>
 			</a>
 			<a
-				href="/blogs/welke-apps-leest-bizzfit"
+				href="/blog/welke-apps-leest-bizzfit"
 				class="space-y-4 rounded border bg-zinc-50 hover:bg-zinc-100 hover:shadow-sm md:flex-1">
 				<img
 					src="/images/smartwatch.png"

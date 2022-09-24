@@ -33,7 +33,9 @@
 	"devDependencies": {
 		"@sveltejs/adapter-netlify": "^1.0.0-next.68",
 		"@tailwindcss/line-clamp": "^0.4.0",
+		"@tailwindcss/typography": "^0.5.7",
 		"autoprefixer": "^10.4.4",
+		"mdsvex": "^0.10.6",
 		"postcss": "^8.4.12",
 		"prettier": "^2.7.1",
 		"prettier-plugin-tailwindcss": "^0.1.12",

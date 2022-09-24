@@ -1,16 +1,14 @@
 <script lang="ts">
 	import Analytics from '$lib/svg/Analytics.svelte';
-
 	import Challenge from '$lib/svg/Challenge.svelte';
 	import Connect from '$lib/svg/Connect.svelte';
-
 	import Leaderboard from '$lib/svg/Leaderboard.svelte';
-
-	import Run from '$lib/svg/Run.svelte';
 	import Trophy from '$lib/svg/Trophy.svelte';
 </script>
 
-<section id="features" class=" bg-bottom bg-no-repeat bg-[url('/images/backgrounds/gradient2_mobile.svg')] lg:bg-[url('/images/backgrounds/gradient2_lg.svg')]">
+<section
+	id="features"
+	class=" bg-[url('/images/backgrounds/gradient2_mobile.svg')] bg-bottom bg-no-repeat lg:bg-[url('/images/backgrounds/gradient2_lg.svg')]">
 	<div class="container mx-auto px-4 py-10 lg:px-16">
 		<div class="mb-40 flex flex-wrap">
 			<div class="md:flex-1">
