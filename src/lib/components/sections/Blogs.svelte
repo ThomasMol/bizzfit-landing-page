@@ -25,7 +25,7 @@
 				</div>
 			</a>
 			<a
-				href="/blog/welke-apps-leest-bizzfit"
+				href="/blog/welke-apps-verbinden-met-bizzfit"
 				class="space-y-4 rounded border bg-zinc-50 hover:bg-zinc-100 hover:shadow-sm md:flex-1">
 				<img
 					src="/images/smartwatch.png"
