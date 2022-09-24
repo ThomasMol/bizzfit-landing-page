@@ -1,14 +1,16 @@
-export async function load({ params }){
-  const post = await import(`../../../lib/posts/${params.slug}.md`)
-  const { layout, title, date, thumbnail, body } = post.metadata
-  const content = post.default
+import type { Load } from "@sveltejs/kit";
 
-  return {
-    layout,
-    title,
-    thumbnail,
-    date,
-    body,
-    content
-  }
+export const load: Load = async ({ params }) => {
+	const post = await import(`../../../lib/posts/${params.slug}.md`);
+	const { layout, title, date, thumbnail, body } = post.metadata;
+	const content = post.default;
+
+	return {
+		layout,
+		title,
+		thumbnail,
+		date,
+		body,
+		content
+	};
 }

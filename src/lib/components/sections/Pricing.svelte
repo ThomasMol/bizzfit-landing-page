@@ -2,7 +2,7 @@
 	import SolidCheck from '$lib/svg/SolidCheck.svelte';
 </script>
 
-<section id="pricing" class="pb-20 bg-slate-50 mb-40">
+<section id="pricing" class="py-20 bg-slate-50 mb-40">
 	<div class="container mx-auto px-4 lg:px-16">
 		<h2 class="py-10 text-center text-4xl font-semibold">Simpele prijzen</h2>
 		<div class="mb-20 flex justify-center">

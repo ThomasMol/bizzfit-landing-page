@@ -1,48 +1,36 @@
+<script lang="ts">
+	export let posts;
+	const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+</script>
 <section id="blogs" class="my-20">
 	<div class="container mx-auto px-4 lg:px-16">
-		<h1 class="py-10 text-center text-4xl font-semibold">Blog</h1>
+		<h1 class="pt-10 text-center text-4xl font-semibold">Blog</h1>
+		<a href="/blog" class="text-amber-500 hover:underline font-semibold text-center block my-10">Bekijk alle blog posts &#8250;</a>
+		
 		<div class="flex flex-wrap justify-between gap-10">
+			{#each posts as post}
 			<a
-				href="/blog/mentale-en-fysieke-welzijn-op-de-werkvloer"
-				class="space-y-4 rounded border bg-zinc-50 hover:bg-zinc-100 hover:shadow-sm md:flex-1">
+				href="/blog/{post.path}"
+				class="flex flex-col justify-between rounded-lg border bg-zinc-50 hover:bg-zinc-100 hover:shadow-sm md:flex-1">
 				<img
-					src="/images/welzijn.png"
-					alt="Welzijn"
-					class="h-64 w-full overflow-hidden object-cover" />
-				<div class="p-4">
-					<h3 class="text-xl font-semibold text-gray-800">
-						Mentale en fysieke welzijn op de werkvloer
+					src={post.meta.thumbnail}
+					alt="Blog thumbnail"
+					class="h-40 w-full overflow-hidden rounded-t-lg object-cover" />
+				<h2 class="px-4 pt-4 text-xl font-semibold text-gray-800">
+					{post.meta.title}
+				</h2>
+				<div class="px-4 pb-4">
+					<h3 class="text-semibold py-3 text-sm capitalize text-zinc-500">
+						{new Date(post.meta.date).toLocaleDateString('nl-NL', options)}
 					</h3>
-					<small class="text-semibold text-sm text-zinc-500">18 juli 2022</small>
-
 					<p class="text-gray-600 line-clamp-2">
-						De wereld om ons heen evolueert, ook op de werkvloer. Niets nieuws, maar nu jongere
-						generaties het toneel betreden, zijn de HR-afdelingen constant bezig met initiatieven om
-						aan de behoeftes en verwachtingen van deze nieuwe groep werknemers te voldoen. Al
-						helemaal als het om welzijn gaat!
+						{post.meta.excerpt}
 					</p>
-					<p class="mt-4 font-semibold text-amber-400">Lees meer</p>
+					<p class="mt-4 font-bold text-amber-500">Lees meer</p>
 				</div>
 			</a>
-			<a
-				href="/blog/welke-apps-verbinden-met-bizzfit"
-				class="space-y-4 rounded border bg-zinc-50 hover:bg-zinc-100 hover:shadow-sm md:flex-1">
-				<img
-					src="/images/smartwatch.png"
-					alt="Welzijn"
-					class="h-64 w-full overflow-hidden object-cover" />
-				<div class="p-4">
-					<h3 class="text-xl font-semibold text-gray-800">Hoe connect je met BizzFit?</h3>
-					<small class="text-semibold text-sm text-zinc-500">19 juli 2022</small>
-
-					<p class="text-gray-600 line-clamp-2">
-						Om goed gebruik te kunnen maken moet er natuurlijk wel de mogelijkheid zijn om
-						applicaties te koppelen met BizzFit. De applicaties die tot nu toe gekoppeld kunnen
-						worden zijn als volgt
-					</p>
-					<p class="mt-4 font-semibold text-amber-400">Lees meer</p>
-				</div>
-			</a>
+		{/each}
 		</div>
 	</div>
 </section>

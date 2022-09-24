@@ -9,7 +9,7 @@
 <section
 	id="features"
 	class=" bg-[url('/images/backgrounds/gradient2_mobile.svg')] bg-bottom bg-no-repeat lg:bg-[url('/images/backgrounds/gradient2_lg.svg')]">
-	<div class="container mx-auto px-4 py-10 lg:px-16">
+	<div class="container mx-auto px-4 py-20 lg:px-16">
 		<div class="mb-40 flex flex-wrap">
 			<div class="md:flex-1">
 				<h2 class="mb-16 text-4xl font-semibold">Onze features</h2>

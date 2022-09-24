@@ -1,8 +1,9 @@
 ---
-title: 'Mentale en fysieke welzijn op de werkvloer'
-date: '18 juli 2022'
-thumbnail: '/uploads/welzijn.png'
-layout: 'blog'
+title: Mentale en fysieke welzijn op de werkvloer
+date: 2022-07-12T10:00:00.000Z
+thumbnail: /uploads/welzijn.png
+layout: blog
+excerpt: De wereld om ons heen evolueert, ook op de werkvloer. Niets nieuws, maar nu jongere generaties het toneel betreden, zijn de HR-afdelingen constant bezig met initiatieven om aan de behoeftes en verwachtingen van deze nieuwe groep werknemers te voldoen. Al helemaal als het om welzijn gaat!
 ---
 
 De wereld om ons heen evolueert, ook op de werkvloer. Niets nieuws, maar nu jongere generaties het toneel betreden, zijn de HR-afdelingen constant bezig met initiatieven om aan de behoeftes en verwachtingen van deze nieuwe groep werknemers te voldoen. Al helemaal als het om welzijn gaat!
