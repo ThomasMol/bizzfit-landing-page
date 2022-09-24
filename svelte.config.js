@@ -10,7 +10,10 @@ const config = {
     })],
 
 	kit: {	
-		adapter: netlifyAdapter()
+		adapter: netlifyAdapter({
+			edge: true,
+			split: false
+		})
 	}
 };
 
