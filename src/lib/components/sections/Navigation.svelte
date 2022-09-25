@@ -12,7 +12,7 @@
 					width="30"
 					height="30"
 					class="mr-2 rounded " />
-				BizzFit</a>
+				bizzfit</a>
 		</div>
 		<div class="block md:hidden">
 			<button
