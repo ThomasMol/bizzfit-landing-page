@@ -9,12 +9,14 @@
 </svelte:head>
 
 <div class="container mx-auto px-4 lg:px-16">
+	<a href="/" class="mt-6 block text-left no-underline font-semibold text-amber-500 hover:underline"
+			>&#8249; Terug naar home</a>
 	<h1 class="py-10 text-2xl font-semibold text-gray-900">Alle Blog posts</h1>
-	<div class="flex flex-wrap justify-between gap-10">
+	<div class="grid md:grid-cols-3 gap-10 mb-20">
 		{#each posts as post}
 			<a
 				href="/blog/{post.path}"
-				class="flex flex-col justify-between rounded-lg border bg-zinc-50 hover:bg-zinc-100 hover:shadow-sm md:flex-1">
+				class="flex flex-col justify-between rounded-lg basis-1/3 border bg-zinc-50 hover:bg-zinc-100 hover:shadow-sm">
 				<img
 					src={post.meta.thumbnail}
 					alt="Blog thumbnail"

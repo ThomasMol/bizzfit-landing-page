@@ -6,10 +6,9 @@ export const load: Load = async ({ params }) => {
 	const allPostFiles = import.meta.glob('../lib/posts/*.md');
 	const iterablePostFiles = Object.entries(allPostFiles);
   
-  const recentPosts = iterablePostFiles.slice(0,3);
 
 	const allPosts = await Promise.all(
-		recentPosts.map(async ([path, resolver]) => {
+		iterablePostFiles.map(async ([path, resolver]) => {
 			const { metadata } = await resolver();
 			const postPath = path.slice(13, -3);
 
@@ -19,6 +18,10 @@ export const load: Load = async ({ params }) => {
 			};
 		})
 	);
-	
-	return allPosts;
+	const sortedPosts = allPosts.sort((a, b) => {
+    return new Date(b.meta.date) - new Date(a.meta.date)
+  });  
+	const recentPosts = sortedPosts.slice(0,3);
+
+	return recentPosts;
 };
