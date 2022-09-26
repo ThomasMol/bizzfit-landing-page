@@ -2,7 +2,7 @@
 	let showMenu = false;
 </script>
 
-<nav>
+<nav class="sticky top-0 bg-white shadow-md">
 	<div class="container mx-auto flex flex-wrap justify-between py-4 px-4 lg:px-16">
 		<div class="mr-6">
 			<a href="/" class="inline-flex font-coolvetica text-2xl text-zinc-700">
