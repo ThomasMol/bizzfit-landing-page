@@ -3,9 +3,9 @@ backend:
   repo: bizzfit/bizzfit-landing-page
   branch: main # Branch to update (optional; defaults to master)
 
-media_folder: "/uploads/"
+media_folder: "static/uploads"
 publi_folder: "/uploads"
-
+logo_url: https://bizzfit.app/images/logo.svg
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
