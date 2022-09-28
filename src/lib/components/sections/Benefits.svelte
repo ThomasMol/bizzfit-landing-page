@@ -4,10 +4,10 @@
 	import Teambuilding from '$lib/svg/Teambuilding.svelte';
 </script>
 
-<section id="benefits" class="bg-slate-50">
+<section id="benefits" class="bg-neutral-50">
 	<div class="container py-32 mx-auto px-4 lg:px-16">
 		<h1 class="py-10 text-center text-4xl font-semibold">Benefits</h1>
-		<div class="flex flex-wrap justify-between gap-10">
+		<div class="flex flex-wrap justify-between gap-10 pb-10">
 			<div class="space-y-4 md:flex-1">
 				<div class="inline-block h-16 rounded-lg bg-amber-100 p-3 text-amber-400">
 					<Sickleave />
