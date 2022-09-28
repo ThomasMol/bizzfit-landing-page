@@ -22,7 +22,7 @@ excerpt: " H﻿et is geen hogere wiskunde om te weten dat je minder verbrand als
   bewegen en je mentale welzijn te behouden, vooral naarmate je ouder
   wordt.   M﻿eer weten wat BizzFit hierin kan betekenen? neem contact op via
   contact@bizzfit.app"
-thumbnail: /static/uploads/julien-tromeur-8lpjc3wifd4-unsplash.jpg
+thumbnail: /uploads/julien-tromeur-8lpjc3wifd4-unsplash.jpg
 ---
  H﻿et is geen hogere wiskunde om te weten dat je minder verbrand als je zit in vergelijking met staan. 
 
