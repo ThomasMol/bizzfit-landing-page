@@ -1,6 +1,6 @@
-<section id="team" class="pb-20 mb-36">
-	<div class="container mx-auto px-4 lg:px-16">
-		<h2 class="mb-10 py-10 text-center text-4xl font-semibold">Ons team</h2>
+<section id="team" class="py-32">
+	<div class="container">
+		<h2 class="py-10 text-center text-4xl font-semibold">Ons team</h2>
 		<div class="flex flex-wrap justify-evenly gap-4 text-center">
 			<div>
 				<img src="/images/bastian.jpg" alt="" class="h-24 w-24 rounded-lg bg-zinc-100" />
