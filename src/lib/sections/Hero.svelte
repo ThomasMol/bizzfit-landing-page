@@ -2,17 +2,12 @@
 	import SolidCheck from '$lib/svg/SolidCheck.svelte';
 </script>
 
-<section
-	id="hero"
-	class="pt-16 bg-[url('/images/backgrounds/gradient_mobile.svg')] bg-right  bg-no-repeat lg:bg-[url('/images/backgrounds/gradient_lg.svg')]">
-	<div class="container mx-auto px-4 lg:flex lg:px-16">
-		<div class="flex-1 basis-1/2 py-8 text-center lg:py-32 lg:text-left">
-			<h1 class="mb-3 text-4xl font-semibold">
-				Begin met <span class="font-coolvetica text-amber-500">bizzfit</span>
-			</h1>
-			<h2 class="mb-5 text-2xl font-semibold text-zinc-700">
+<section id="hero" class="pt-16 bg-zinc-50 border-b">
+	<div class="container lg:flex ">
+		<div class="flex-1 basis-1/2 py-8 text-center lg:py-40 lg:text-left">
+			<h1 class="mb-5 text-3xl font-semibold text-zinc-800">
 				Dé manier voor een fittere werkvloer
-			</h2>
+			</h1>
 			<ul class="space-y-2 text-left lg:mb-10">
 				<li>
 					<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-400"><SolidCheck /></span>
@@ -44,14 +39,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex-1 basis-1/2 overflow-hidden lg:py-20">
-			<img src="/images/runnerhero.png" alt="Woman running" class="w-42 mx-auto block lg:w-80" />
-			<!-- <div class="absolute top-10 left-1/2 ">
-				<div
-					class="relative -top-1/2 left-1/2 -z-10 -ml-36 mt-10 h-72 w-72 rounded-full bg-amber-300 opacity-70 mix-blend-multiply blur-3xl filter" />
-				<div
-					class="relative -top-1/2 left-1/2 -z-10 -mt-10 h-72 w-72 rounded-full bg-blue-300 opacity-50 mix-blend-multiply blur-3xl filter" />
-			</div>  -->
+		<div class="flex-1 basis-1/2 overflow-hidden self-end">
+			<img src="/images/challenges-hero-ss.png" alt="Woman running" class=" mx-auto block w-80" />
 		</div>
 	</div>
 </section>

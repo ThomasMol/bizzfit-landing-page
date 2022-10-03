@@ -1,5 +1,5 @@
 <script>
-	import Footer from '$lib/components/sections/Footer.svelte';
+	import Footer from '$lib/sections/Footer.svelte';
 </script>
 
 <svelte:head>

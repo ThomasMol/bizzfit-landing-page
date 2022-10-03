@@ -1,5 +1,5 @@
 <script>
-	import EmailContactForm from '../EmailContactForm.svelte';
+	import EmailContactForm from '../components/EmailContactForm.svelte';
 </script>
 
 <section id="contact" class="bg-zinc-50">
