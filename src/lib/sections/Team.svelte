@@ -1,4 +1,4 @@
-<section id="team" class="py-32">
+<section id="team" class="py-32 bg-zinc-50 border-b border-t">
 	<div class="container">
 		<h2 class="pb-10 text-center text-4xl font-semibold">Ons team</h2>
 		<div class="flex md:flex-row flex-col justify-evenly gap-10 text-center">

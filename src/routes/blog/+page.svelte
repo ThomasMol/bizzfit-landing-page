@@ -1,14 +1,14 @@
 <script lang="ts">
 	export let data;
-	const posts = Object.values(data);
-	var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+	const posts : any = Object.values(data);
+	var options : Intl.DateTimeFormatOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 </script>
 
 <svelte:head>
 	<title>BizzFit Blog</title>
 </svelte:head>
 
-<div class="container mx-auto px-4 lg:px-16">
+<div class="container mx-auto px-4 lg:px-16 pt-20">
 	<a href="/" class="mt-6 block text-left no-underline font-semibold text-amber-500 hover:underline"
 			>&#8249; Terug naar home</a>
 	<h1 class="py-10 text-2xl font-semibold text-gray-900">Alle Blog posts</h1>

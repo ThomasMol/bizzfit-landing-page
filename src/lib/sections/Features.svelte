@@ -34,7 +34,10 @@
 <section id="features" class="bg-zinc-800 py-40">
 	<div class="container flex flex-wrap">
 		<div class="md:flex-1">
-			<h2 class="pb-20 text-4xl font-semibold text-zinc-100">Features</h2>
+			<header class="pb-20 text-left">
+				<h2 class="text-lg font-semibold text-amber-500">Features</h2>
+				<h1 class="mt-4 text-4xl font-semibold text-zinc-100">Zo maken we jouw werkvloer fitter</h1>
+			</header>
 			<dl class="space-y-14">
 				{#each features as feature, i}
 					<div

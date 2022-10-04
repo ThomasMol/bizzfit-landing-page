@@ -18,12 +18,12 @@ const faqs = [
 </script>
 <section id="faqs" class="py-32">
 	<div class="container">
-		<header class="mb-20 text-center">
-      <h2 class="text-amber-600 font-semibold">FAQs</h2>
-			<h1 class="mt-3 text-4xl font-semibold text-zinc-900">Veelgestelde vragen</h1>
+    <header class="pb-20 text-center">
+      <h2 class="text-lg font-semibold text-amber-500">FAQs</h2>
+			<h1 class="mt-4 text-4xl font-semibold text-zinc-900">Veelgestelde vragen</h1>
       <h3 class="mt-3 text-zinc-700 text-lg">Staat je vraag er niet tussen? neem contact op via contact@bizzfit.app</h3>
 		</header>
-    <div class="grid gap-10 grid-cols-3">
+    <div class="grid gap-10 md:grid-cols-3">
       {#each faqs as faq}
       <div>
         <h2 class="font-semibold text-lg text-zinc-900">{faq.question}</h2>
