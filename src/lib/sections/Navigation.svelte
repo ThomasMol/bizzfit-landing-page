@@ -4,7 +4,7 @@
 	let showMenu = false;
 </script>
 
-<nav class="fixed top-0 z-50 w-full  border-zinc-100 bg-white/80 backdrop-blur-xl">
+<nav class="fixed top-0 z-50 w-full  border-zinc-100 border-b bg-white/80 backdrop-blur-xl">
 	<div class="container flex flex-wrap justify-between">
 		<div class="mr-6 py-3">
 			<a href="/" class="flex font-coolvetica text-2xl text-neutral-900">
@@ -26,12 +26,13 @@
 			<a href="/#features" class="text-zinc-600 hover:text-amber-700">Features</a>
 			<a href="/#faqs" class="text-zinc-600 hover:text-amber-700">FAQs</a>
 			<a href="/#team" class="text-zinc-600 hover:text-amber-700">Team</a>
+			<a href="/#blogs" class="text-zinc-600 hover:text-amber-700">Blog</a>
 		</div>
 		<div class:hidden={!showMenu} class="w-full space-x-8 py-4 md:inline-block md:w-auto">
 			<a
 				href="/#contact"
 				class="rounded bg-amber-500 px-5 py-2 font-semibold text-white hover:bg-amber-600"
-				>Begin nu</a>
+				>Contact</a>
 		</div>
 		<div class="block md:hidden">
 			<button

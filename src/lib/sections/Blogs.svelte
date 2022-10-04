@@ -3,10 +3,12 @@
 	const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
 </script>
-<section id="blogs" class="my-20">
-	<div class="container mx-auto px-4 lg:px-16">
-		<h1 class="pt-10 text-center text-4xl font-semibold">Blog</h1>
-		<a href="/blog" class="text-amber-500 hover:underline font-semibold text-center block my-10">Bekijk alle blog posts &#8250;</a>
+<section id="blogs" class="my-32">
+	<div class="container">
+		<header class="mb-20">
+			<h1 class="text-center text-4xl font-semibold">Blog</h1>
+			<a href="/blog" class="mt-4 text-amber-500 hover:underline font-semibold text-center block">Bekijk alle blog posts &#8250;</a>
+		</header>
 		
 		<div class="flex flex-wrap justify-between gap-10">
 			{#each posts as post}

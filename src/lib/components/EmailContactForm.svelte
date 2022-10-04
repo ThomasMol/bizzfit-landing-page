@@ -28,7 +28,7 @@
 		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-amber-500 focus:ring-amber-600" />
 	<button
 		type="submit"
-		class="rounded bg-amber-400 px-4 py-2 font-bold text-white transition ease-linear hover:bg-amber-500">
+		class="rounded bg-orange-400 px-4 py-2 font-bold text-white transition ease-linear hover:bg-orange-500">
 		Verstuur!
 	</button>
 </form>

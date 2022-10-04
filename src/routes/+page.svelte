@@ -6,6 +6,7 @@
 	import Team from '$lib/sections/Team.svelte';
 	import Contact from '$lib/sections/Contact.svelte';
 	import Blogs from '$lib/sections/Blogs.svelte';
+	import Faq from '$lib/sections/FAQ.svelte';
 
 	export let data;
 	const posts = Object.values(data);
@@ -18,6 +19,7 @@
 <Hero />
 <Benefits />
 <Features />
+<Faq/>
 <Team />
 <Blogs posts={posts}/>
 <Contact />
