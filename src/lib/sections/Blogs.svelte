@@ -8,7 +8,7 @@
 	};
 </script>
 
-<section id="blogs" class="my-32">
+<section id="blogs" class="py-32">
 	<div class="container">
 		<header class="mb-20">
 			<h1 class="text-center text-4xl font-semibold">Blog</h1>
