@@ -21,7 +21,7 @@ const faqs = [
     <header class="pb-20 text-center">
       <h2 class="text-lg font-semibold text-amber-500">FAQs</h2>
 			<h1 class="mt-4 text-4xl font-semibold text-zinc-900">Veelgestelde vragen</h1>
-      <h3 class="mt-3 text-zinc-700 text-lg">Staat je vraag er niet tussen? neem contact op via contact@bizzfit.app</h3>
+      <h3 class="mt-3 text-zinc-700 text-lg">Staat je vraag er niet tussen? Neem contact op via contact@bizzfit.app</h3>
 		</header>
     <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
       {#each faqs as faq}

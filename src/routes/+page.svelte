@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<title>BizzFit</title>
+	<title>Bizzfit</title>
 </svelte:head>
 
 <Hero />
