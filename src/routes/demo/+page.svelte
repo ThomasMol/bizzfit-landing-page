@@ -1,10 +1,3 @@
-<script lang="ts">
-
-import Footer from "$lib/components/sections/Footer.svelte";
-import Navigation from "$lib/components/sections/Navigation.svelte";
-
-</script>
-<Navigation/>
 <div class="max-h-screen h-[60rem]">
 
 <iframe
@@ -15,4 +8,3 @@ import Navigation from "$lib/components/sections/Navigation.svelte";
 	allowfullscreen />
 </div>
 
-<Footer/>
