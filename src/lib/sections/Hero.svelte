@@ -1,10 +1,12 @@
 <script lang="ts">
+	import CirlceBackground from '$lib/svg/CirlceBackground.svelte';
 	import SolidCheck from '$lib/svg/SolidCheck.svelte';
+	import { fly } from 'svelte/transition';
 </script>
 
-<section id="hero" class="pt-16 bg-zinc-50 border-b">
+<section id="hero" class="border-b bg-zinc-50 pt-16 overflow-hidden">
 	<div class="container lg:flex ">
-		<div class="flex-1 basis-1/2 py-8 text-center lg:py-40 lg:text-left">
+		<div class="flex-1 basis-1/2 py-8 text-center lg:py-40 md:text-left">
 			<h1 class="mb-5 text-3xl font-semibold text-zinc-800">
 				Dé manier voor een fittere werkvloer
 			</h1>
@@ -22,25 +24,26 @@
 					Makkelijk te linken met bijna alle gezondheidsapps
 				</li>
 			</ul>
-			<div class="flex flex-wrap gap-4 md:gap-8">
-				<div class="mx-auto text-center">
-					<p class="py-5 text-sm font-semibold text-zinc-700">Je bent een werknemer</p>
+			<div class="flex flex-wrap gap-4 md:gap-8 justify-around md:justify-start">
+				<div class=" text-center">
+					<p class="py-5 text-sm font-semibold text-zinc-700">Plan een demo</p>
 					<a
 						href="/#contact"
 						class="w-full rounded bg-gradient-to-tr from-amber-500 to-amber-600 py-2 px-8 text-xl font-semibold text-zinc-100 no-underline hover:from-amber-700 hover:to-amber-600 hover:text-zinc-50"
-						>Beveel ons aan</a>
+						>Conact ons</a>
 				</div>
-				<div class="mx-auto text-center">
-					<p class="py-5 text-sm font-semibold text-zinc-700">Je bent een werkgever</p>
+				<div class=" text-center">
+					<p class="py-5 text-sm font-semibold text-zinc-700">Bekijk onze features</p>
 					<a
-						href="/#contact"
+						href="/#benefits"
 						class="rounded border border-amber-500 py-2 px-8 text-xl font-semibold text-amber-500 no-underline hover:bg-amber-500 hover:text-zinc-50"
-						>Plan een demo</a>
+						>Lees meer</a>
 				</div>
 			</div>
 		</div>
-		<div class="flex-1 basis-1/2 overflow-hidden self-end">
-			<img src="/images/challenges-hero-ss.png" alt="Woman running" class=" mx-auto block w-80" />
+		<div class="relative flex-1 basis-1/2 self-end ">
+			<img src="/images/challenges-hero-ss.png" alt="Woman running" class="z-10 relative mx-auto block w-80 " />
+		
 		</div>
 	</div>
 </section>

@@ -40,7 +40,7 @@
 				<h2 class="text-lg font-semibold text-amber-500">Features</h2>
 				<h1 class="mt-4 text-4xl font-semibold text-zinc-100">Zo maken we jouw werkvloer fitter</h1>
 			</header>
-			<dl class="space-y-14">
+			<dl class="md:space-y-4 xl:space-y-14">
 				{#each features as feature, i}
 					<div
 						on:mousedown={() => (index = i)}
@@ -61,7 +61,7 @@
 		<div class="h-full w-full flex-1">
 			{#key index}
 				<img
-					class="mx-auto h-full w-full max-w-sm object-cover"
+					class="mx-auto h-full w-full max-w-sm object-cover mt-52 lg:mt-32 xl:mt-20 px-4 lg:px-0"
 					in:fly={{ x: 30, duration: 400 }}
 					src={features[index].image}
 					alt={features[index].title} />

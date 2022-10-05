@@ -2,16 +2,16 @@
 // list of faq items
 const faqs = [
   {
-    question: "What is the purpose of this website?",
-    answer: "This website is a collection of resources for learning about the web and web development. It is a work in progress and will be updated regularly.",
+    question: "Waarom zou ik Bizzfit willen gebruiken?",
+    answer: "Bizzfit is een platform dat je helpt om de vitaliteit van je werknemers te verbeteren. Door middel van challenges zorgen we ervoor dat je werknemers gemotiveerd blijven om te blijven bewegen. ",
   },
   {
-    question: "How can I contribute?",
-    answer: "You can contribute by adding new resources or improving existing ones. You can also help by reporting any issues you find.",
+    question: "Welke health apps kan ik koppelen aan Bizzfit?",
+    answer: "Bizzfit kan op dit moment worden verbonden met Google Fit, Apple Health, Strava en Fitbit. We zijn bezig met het toevoegen van meer apps.",
   },
   {
-    question: "How can I contact you?",
-    answer: "You can contact me on Twitter or by email.",
+    question: "Wat doet Bizzfit met mijn gegevens?",
+    answer: "Persoonlijke gegevens van gebruikers van de Bizzfit-app worden met zorgvuldigheid behandeld en beveiligd. Geen van deze data wordt gedeeld met derden.",
   },
 ];
 
@@ -23,7 +23,7 @@ const faqs = [
 			<h1 class="mt-4 text-4xl font-semibold text-zinc-900">Veelgestelde vragen</h1>
       <h3 class="mt-3 text-zinc-700 text-lg">Staat je vraag er niet tussen? neem contact op via contact@bizzfit.app</h3>
 		</header>
-    <div class="grid gap-10 md:grid-cols-3">
+    <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
       {#each faqs as faq}
       <div>
         <h2 class="font-semibold text-lg text-zinc-900">{faq.question}</h2>

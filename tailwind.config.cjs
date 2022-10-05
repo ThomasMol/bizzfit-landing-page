@@ -10,10 +10,21 @@ const config = {
 				wiggle: {
 					'0%, 100%': { transform: 'rotate(-10deg)' },
 					'50%': { transform: 'rotate(10deg)' }
+				},
+				'spin-reverse': {
+					'from': {
+						transform: 'rotate(360deg)'
+					},
+					'to': {
+						transform: 'rotate(0deg)'
+					}
 				}
+
 			},
       animation: {
         wiggle: 'wiggle 0.85s ease-in-out infinite',
+				'spin-slow': 'spin 5s linear infinite',
+				'spin-reverse-slow': 'spin-reverse 4s linear infinite',
       }
 		},
 		container: {
