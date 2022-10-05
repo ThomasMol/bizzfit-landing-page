@@ -1,9 +1,11 @@
 <script lang="ts">
 	import Challenge from '$lib/svg/Challenge.svelte';
 	import Connect from '$lib/svg/Connect.svelte';
+	import Swipe from '$lib/svg/Swipe.svelte';
 	import Trophy from '$lib/svg/Trophy.svelte';
+	import { fly } from 'svelte/transition';
 
-	let index = 0;
+	$: index = 0;
 	// array of features with image, title, icon and description
 	const features = [
 		{
@@ -31,9 +33,9 @@
 	];
 </script>
 
-<section id="features" class="bg-zinc-800 py-40">
-	<div class="container flex flex-wrap">
-		<div class="md:flex-1">
+<section id="features" class="bg-zinc-800 py-20 md:py-40">
+	<div class="container hidden flex-wrap md:flex">
+		<div class="flex-1">
 			<header class="pb-20 text-left">
 				<h2 class="text-lg font-semibold text-amber-500">Features</h2>
 				<h1 class="mt-4 text-4xl font-semibold text-zinc-100">Zo maken we jouw werkvloer fitter</h1>
@@ -56,8 +58,41 @@
 				{/each}
 			</dl>
 		</div>
-		<div class="h-full w-full md:flex-1">
-			<img src={features[index].image} alt="Leaderbaord" class="mx-auto  max-w-sm" />
+		<div class="h-full w-full flex-1">
+			{#key index}
+				<img
+					class="mx-auto h-full w-full max-w-sm object-cover"
+					in:fly={{ x: 30, duration: 400 }}
+					src={features[index].image}
+					alt={features[index].title} />
+			{/key}
+		</div>
+	</div>
+
+	<div class="container md:hidden">
+		<header class="pb-5 text-left">
+			<h2 class="text-lg font-semibold text-amber-500">Features</h2>
+			<h1 class="mt-2 text-4xl font-semibold text-zinc-100">Zo maken we jouw werkvloer fitter</h1>
+		</header>
+		<div class="flex snap-x snap-mandatory gap-10 overflow-x-auto">
+			{#each features as feature, i}
+				<div class="min-w-full snap-center rounded-lg bg-zinc-700  relative">
+					<img
+						class="relative mx-auto w-full max-w-sm object-cover px-20 pt-4 pb-16"
+						src={feature.image}
+						alt={feature.title} />
+					<div class="absolute inset-x-0 bottom-0 z-20 bg-zinc-700/80 backdrop-blur p-5 rounded-b-lg">
+						<div class="h-8 w-8 items-center justify-center rounded-lg text-amber-500">
+							<svelte:component this={feature.icon} />
+						</div>
+						<h2 class="mt-3 text-lg font-medium leading-6 text-zinc-100">{feature.title}</h2>
+						<p class="mt-2 text-base text-zinc-200">{feature.description}</p>
+					</div>
+				</div>
+			{/each}
+		</div>
+		<div class="text-zinc-100 w-12 mx-auto p-2 mt-4 animate-wiggle">
+			<Swipe/>
 		</div>
 	</div>
 </section>

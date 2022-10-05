@@ -12,7 +12,7 @@
 		</header>
 		<div class="flex flex-wrap justify-between gap-16">
 			<div class="space-y-4 md:flex-1">
-				<div class="inline-block h-14 rounded-lg bg-orange-100 p-3 text-amber-500">
+				<div class="inline-block h-12  rounded-lg bg-orange-100 p-3 text-amber-500">
 					<Sickleave />
 				</div>
 				<h3 class="text-xl font-semibold text-gray-800">Minder verzuim</h3>
@@ -23,7 +23,7 @@
 				</p>
 			</div>
 			<div class="space-y-4 md:flex-1">
-				<div class="inline-block h-14 rounded-lg bg-orange-100 p-3 text-amber-500">
+				<div class="inline-block h-12 rounded-lg bg-orange-100 p-3 text-amber-500">
 					<Teambuilding />
 				</div>
 				<h3 class="text-xl font-semibold text-gray-800">Teambuilding</h3>
@@ -34,7 +34,7 @@
 				</p>
 			</div>
 			<div class="space-y-4 md:flex-1">
-				<div class="inline-block h-14 rounded-lg bg-orange-100 p-3 text-amber-500">
+				<div class="inline-block h-12 rounded-lg bg-orange-100 p-3 text-amber-500">
 					<Productivity />
 				</div>
 				<h3 class="text-xl font-semibold text-gray-800">Betere werkprestaties</h3>
