@@ -30,7 +30,7 @@
 					<a
 						href="/#contact"
 						class="w-full rounded bg-gradient-to-tr from-amber-500 to-amber-600 py-2 px-8 text-xl font-semibold text-zinc-100 no-underline hover:from-amber-700 hover:to-amber-600 hover:text-zinc-50"
-						>Conact ons</a>
+						>Contact ons</a>
 				</div>
 				<div class=" text-center">
 					<p class="py-5 text-sm font-semibold text-zinc-700">Bekijk onze features</p>
@@ -43,7 +43,7 @@
 		</div>
 		<div class="relative flex-1 basis-1/2 self-end ">
 			<img src="/images/challenges-hero-ss.png" alt="Woman running" class="z-10 relative mx-auto block w-80 " />
-		
+
 		</div>
 	</div>
 </section>
