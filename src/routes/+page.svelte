@@ -17,6 +17,7 @@
 </svelte:head>
 
 <Hero />
+
 <Benefits />
 <Features />
 <Faq/>

@@ -17,9 +17,9 @@
 				</div>
 				<h3 class="text-xl font-semibold text-gray-800">Minder verzuim</h3>
 				<p class="text-gray-600">
-					Doordat je meer gaat bewegen krijg je een sterke weerstand. Mensen met een sterke
-					weerstand zijn aanzienlijk minder vaak ziek. Dit betekent dat het ziekteverzuim binnen je
-					bedrijf omlaag gaat.
+					Gebruikers worden gemotiveerd om regelmatig te bewegen en te sporten, wat leidt tot minder
+					verzuim door ziekte en een verbeterde gezondheid van gebruikers. Zo ga je makkelijk
+					ziekteverzuim tegen.
 				</p>
 			</div>
 			<div class="space-y-4 md:flex-1">
@@ -28,9 +28,8 @@
 				</div>
 				<h3 class="text-xl font-semibold text-gray-800">Teambuilding</h3>
 				<p class="text-gray-600">
-					BizzFit laat je samen met jouw collega's streven naar hetzelfde doel: een fittere
-					werkvloer. Dit gezamenlijke doel helpt bij de Teambuilding op de werkvloer. Bijkomende
-					features zoals group challenges versterken dit effect.
+					Onze app biedt leuke challenges en beloningen om werknemers te verbinden en te stimuleren
+					om samen te werken, wat leidt tot verbeterde teambuilding en sociale interactie.
 				</p>
 			</div>
 			<div class="space-y-4 md:flex-1">
@@ -39,9 +38,9 @@
 				</div>
 				<h3 class="text-xl font-semibold text-gray-800">Betere werkprestaties</h3>
 				<p class="text-gray-600">
-					Een fitte werker staat gelijk aan een productieve werker. Onderzoek wijst uit dat
-					gezondheid een grote rol speelt in de productiviteit op de werkvloer. Met behulp van
-					BizzFit krijgt je vitaliteit een boost, en ga je blijer en beter aan het werk.
+					Wetenschappelijk onderzoek toont aan dat gezondheid een grote rol speelt in de
+					productiviteit. Door fysiek en mentaal gezond te zijn gaan werkprestatiess en productiveit
+					omhoog.
 				</p>
 			</div>
 		</div>
