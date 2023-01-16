@@ -3,6 +3,13 @@
 	<!-- <input type="hidden" name="form-name" value="contact-form"> -->
 	<input type="hidden" name="_redirect" value="https://bizzfit.app/success" />
 	<input
+    type="checkbox"
+    name="_succesermee"
+    style="display:none"
+    tabindex="-1"
+    autocomplete="off"
+  />
+	<input
 		type="text"
 		name="name"
 		required
@@ -27,7 +34,6 @@
 		placeholder="Bedrijfsnaam *"
 		class="h-10 w-full rounded border-zinc-300 shadow-sm focus:border-amber-500 focus:ring-amber-600" />
 	<textarea
-		type="text"
 		name="message"
 		placeholder="Bericht"
 		class="h-20 w-full rounded border-zinc-300 shadow-sm focus:border-amber-500 focus:ring-amber-600" />

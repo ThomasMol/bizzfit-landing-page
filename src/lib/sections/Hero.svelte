@@ -8,13 +8,16 @@
 <section id="hero" class="overflow-hidden border-b bg-zinc-50 pt-16">
 	<div class="container lg:flex ">
 		<div class="flex-1 basis-1/2 py-8 text-center md:text-left lg:py-32">
-			<h1 class="mb-5 text-5xl font-semibold text-zinc-800">
-				10x productiviteit, vitaliteit en werkprestatie
+			<h1 class="text-5xl font-semibold text-zinc-800">
+				10x productiviteit, verbondenheid en werplezier
 			</h1>
-			<ul class="space-y-2 text-left lg:mb-10">
+			<!-- <h2 class="text-2xl mt-8 text-zinc-700">
+				Stimuleer gemakkelijk en effectief bewegen en sporten bij je werknemers met teams-challenges
+			</h2> -->
+			 <ul class="space-y-2 mt-8 text-left lg:mb-10">
 				<li>
 					<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-400"><SolidCheck /></span>
-					Versterk fysieke gezondheid met teams-challenges
+					Versterk fysieke gezondheid met challenges
 				</li>
 				<li>
 					<span class="inline-block h-7 w-7 pb-1 align-middle text-blue-400"><SolidCheck /></span>
@@ -25,7 +28,7 @@
 					Fitter, energieker en productiever team als resultaat
 				</li>
 			</ul>
-			<div class="flex flex-wrap justify-around gap-4 md:justify-start md:gap-8">
+			<div class="flex flex-wrap mt-16 justify-around gap-4 md:justify-start md:gap-8">
 				<div class=" text-center">
 					<p class="py-5 text-sm font-semibold text-zinc-700">De benefits</p>
 					<a
